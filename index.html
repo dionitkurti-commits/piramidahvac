@@ -19,12 +19,12 @@
     </div>
   </div>
 
-  <header class="nav">
+  <header class="header">
     <div class="container">
       <div class="row">
         <a class="brand" href="index.html">
-          <span class="logoWrap">
-            <img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo" />
+          <span class="logo">
+            <img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo">
           </span>
           <span class="name">
             <div class="t1">PIRAMIDA HVAC</div>
@@ -32,13 +32,13 @@
           </span>
         </a>
 
-        <nav class="menu" aria-label="Main">
+        <nav class="nav" aria-label="Main navigation">
           <a class="link active" href="index.html" data-i18n="nav_home">Ballina</a>
           <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
           <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
           <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
 
-          <div class="lang" aria-label="Language">
+          <div class="lang" aria-label="Language switcher">
             <button type="button" data-lang-btn="sq" class="active">SQ</button>
             <button type="button" data-lang-btn="en">EN</button>
           </div>
@@ -51,38 +51,14 @@
 
   <main>
     <section class="hero">
-      <!-- floating icons -->
-      <div class="floats" aria-hidden="true">
-        <div class="floatIcon float1">
-          <!-- snowflake -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M12 2v20M4 6l16 12M20 6L4 18"/>
-          </svg>
-        </div>
-        <div class="floatIcon float2">
-          <!-- flame -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M12 22s7-4 7-11c0-4-2-6-4-8 0 3-2 4-3 6-1-2-1-4-1-6C8 5 5 8 5 13c0 5 3 9 7 9z"/>
-          </svg>
-        </div>
-        <div class="floatIcon float3">
-          <!-- fan -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-            <path d="M12 10c-6-6 6-10 6-2M14 12c8 0 6 10-2 6M12 14c0 8-10 6-6-2M10 12c-8 0-6-10 2-6"/>
-          </svg>
-        </div>
-        <div class="floatIcon float4">
-          <!-- bolt -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/>
-          </svg>
-        </div>
-      </div>
+      <!-- animated blobs -->
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="blob b3" aria-hidden="true"></div>
 
       <div class="container">
         <div class="grid">
-          <div>
+          <div class="reveal">
             <h1 data-i18n="hero_title">Instalim & Mirëmbajtje Klima dhe Pompa Termike</h1>
             <p data-i18n="hero_sub">
               Zgjidhje efikase për ngrohje dhe ftohje – për shtëpi dhe biznese. Punë e pastër, korrektësi dhe shërbim i shpejtë.
@@ -93,7 +69,7 @@
             </div>
           </div>
 
-          <div class="heroCard">
+          <div class="heroCard reveal">
             <h3 data-i18n="hero_box_title">Shërbim i shpejtë & i sigurt</h3>
             <ul>
               <li data-i18n="hero_li1">Instalim profesional i klimave</li>
@@ -101,7 +77,7 @@
               <li data-i18n="hero_li3">Instalim & servis për pompa termike</li>
               <li data-i18n="hero_li4">Konsulencë dhe ofertim</li>
             </ul>
-            <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <div class="miniRow">
               <a class="btn primary" href="tel:+38349159380">📞 +383 49 159 380</a>
               <a class="btn ghost" href="mailto:dionitkurti@gmail.com">✉️ Email</a>
             </div>
@@ -112,19 +88,21 @@
 
     <section class="section">
       <div class="container">
-        <h2 data-i18n="sec_offer_title">Çfarë ofrojmë</h2>
-        <p class="lead" data-i18n="sec_offer_lead">Shërbime të plota për komoditet gjatë gjithë vitit.</p>
+        <div class="reveal">
+          <h2 data-i18n="sec_offer_title">Çfarë ofrojmë</h2>
+          <p class="lead" data-i18n="sec_offer_lead">Shërbime të plota për komoditet gjatë gjithë vitit.</p>
+        </div>
 
         <div class="cards">
-          <div class="card">
+          <div class="card reveal">
             <h3 data-i18n="c1_title">Instalim Klima</h3>
             <p data-i18n="c1_text">Montim, vakumim, testim dhe optimizim pune për performancë maksimale.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3 data-i18n="c2_title">Servis & Mirëmbajtje</h3>
             <p data-i18n="c2_text">Diagnostikim, pastrim, kontroll dhe riparim – që pajisja të punojë si duhet.</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3 data-i18n="c3_title">Pompa Termike</h3>
             <p data-i18n="c3_text">Zgjidhje efikase për ngrohje/fhothje – dimensionim, instalim dhe servis.</p>
           </div>
@@ -134,7 +112,7 @@
 
     <section class="cta">
       <div class="container">
-        <div class="row">
+        <div class="row reveal">
           <div>
             <h3 style="margin:0 0 6px" data-i18n="cta_title">Gati për ofertë?</h3>
             <p data-i18n="cta_text">Na dërgo lokacionin dhe madhësinë e hapësirës – të kthejmë përgjigje shpejt.</p>
@@ -147,6 +125,13 @@
       </div>
     </section>
   </main>
+
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp" href="https://wa.me/38349159380" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M19.11 17.44c-.29-.15-1.7-.84-1.97-.93-.27-.1-.47-.15-.66.15-.2.29-.76.93-.93 1.12-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.31-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.6-.91-2.19-.24-.58-.49-.5-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-.02 2.44 1 1.44 2.22 2.83 3.93 3.97 1.71 1.15 3.18 1.53 4.32 1.24 1.14-.29 1.7-1.07 1.94-1.49.24-.42.24-.78.17-.85-.07-.07-.27-.15-.56-.29zM16.02 3C9.38 3 4 8.38 4 15.02c0 2.1.55 4.07 1.51 5.78L4 29l8.41-1.47c1.64.9 3.52 1.41 5.61 1.41 6.64 0 12.02-5.38 12.02-12.02C30.06 8.38 22.66 3 16.02 3zm0 22.01c-1.92 0-3.7-.56-5.2-1.53l-.37-.24-4.99.87.94-4.85-.24-.39c-1.03-1.56-1.63-3.43-1.63-5.43C4.53 9.83 9.82 4.54 16.02 4.54c6.2 0 11.49 5.29 11.49 11.49 0 6.2-5.29 8.98-11.49 8.98z"/>
+    </svg>
+  </a>
 
   <footer class="footer">
     <div class="container">
