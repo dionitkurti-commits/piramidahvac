@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact – PIRAMIDA HVAC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container"><div class="row">
+      <span class="pill">📞 <strong>+383 49 159 380</strong></span>
+      <span class="pill">📍 Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span>
+      <span class="pill">✉️ dionitkurti@gmail.com</span>
+    </div></div>
+  </div>
+
+  <header class="nav">
+    <div class="container"><div class="row">
+      <a class="brand" href="index.html">
+        <span class="logoWrap"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo" /></span>
+        <span class="name"><div class="t1">PIRAMIDA HVAC</div><div class="t2">HVAC • AC • Heat Pumps</div></span>
+      </a>
+
+      <nav class="menu">
+        <a class="link" href="index.html" data-i18n="nav_home">Ballina</a>
+        <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
+        <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
+        <a class="link active" href="contact.html" data-i18n="nav_contact">Kontakt</a>
+
+        <div class="lang">
+          <button type="button" data-lang-btn="sq" class="active">SQ</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+
+        <a class="btn primary" href="tel:+38349159380" data-i18n="call_now">Thirr tani</a>
+      </nav>
+    </div></div>
+  </header>
+
+  <main>
+    <section class="pagehead">
+      <div class="container">
+        <h1 data-i18n="contact_title">Kontakt</h1>
+        <p data-i18n="contact_sub"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="two-col">
+          <div class="card">
+            <h3 data-i18n="contact_details">Detajet e kontaktit</h3>
+            <p><strong>Phone:</strong> <a href="tel:+38349159380">+383 49 159 380</a></p>
+            <p><strong>Email:</strong> <a href="mailto:dionitkurti@gmail.com">dionitkurti@gmail.com</a></p>
+            <p><strong>Address:</strong> Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</p>
+            <p class="note" data-i18n="note"></p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="contact_form">Forma e kontaktit</h3>
+
+            <form class="form" id="contactForm">
+              <div class="input">
+                <label for="name" data-i18n="name">Emri</label>
+                <input id="name" type="text" required data-i18n-placeholder="name" placeholder="Emri" />
+              </div>
+              <div class="input">
+                <label for="phone" data-i18n="phone">Telefoni</label>
+                <input id="phone" type="tel" required data-i18n-placeholder="phone" placeholder="+383..." />
+              </div>
+              <div class="input">
+                <label for="msg" data-i18n="message">Mesazhi</label>
+                <textarea id="msg" required data-i18n-placeholder="message" placeholder="Mesazhi..."></textarea>
+              </div>
+              <button class="btn primary" type="submit" data-i18n="send">Dërgo</button>
+              <div class="note" style="margin-top:8px">*Opens your email app to send.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <small>© <span id="y"></span> PIRAMIDA HVAC</small>
+        <small><a href="mailto:dionitkurti@gmail.com">dionitkurti@gmail.com</a> • <a href="tel:+38349159380">+383 49 159 380</a></small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
