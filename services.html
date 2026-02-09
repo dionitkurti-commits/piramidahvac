@@ -7,88 +7,85 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="topbar">
-    <div class="container">
-      <div class="row">
-        <span class="pill">📞 <strong>+383 49 159 380</strong></span>
-        <span class="pill">📍 Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span>
-        <span class="pill">✉️ dionitkurti@gmail.com</span>
-      </div>
-    </div>
+    <div class="container"><div class="row">
+      <span class="pill">📞 <strong>+383 49 159 380</strong></span>
+      <span class="pill">📍 Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span>
+      <span class="pill">✉️ dionitkurti@gmail.com</span>
+    </div></div>
   </div>
 
-  <header class="nav">
-    <div class="container">
-      <div class="row">
-        <a class="brand" href="index.html">
-          <span class="logoWrap"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo" /></span>
-          <span class="name"><div class="t1">PIRAMIDA HVAC</div><div class="t2">HVAC • AC • Heat Pumps</div></span>
-        </a>
+  <header class="header">
+    <div class="container"><div class="row">
+      <a class="brand" href="index.html">
+        <span class="logo"><img src="assets/logo.png" alt="Logo" onerror="this.src='assets/logo.jpg'"></span>
+        <span class="name"><div class="t1">PIRAMIDA HVAC</div><div class="t2">HVAC • AC • Heat Pumps</div></span>
+      </a>
 
-        <nav class="menu">
-          <a class="link" href="index.html" data-i18n="nav_home">Ballina</a>
-          <a class="link active" href="services.html" data-i18n="nav_services">Shërbimet</a>
-          <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
-          <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
-
-          <div class="lang">
-            <button type="button" data-lang-btn="sq" class="active">SQ</button>
-            <button type="button" data-lang-btn="en">EN</button>
-          </div>
-
-          <a class="btn primary" href="tel:+38349159380" data-i18n="call_now">Thirr tani</a>
-        </nav>
-      </div>
-    </div>
+      <nav class="nav">
+        <a class="link" href="index.html" data-i18n="nav_home">Ballina</a>
+        <a class="link active" href="services.html" data-i18n="nav_services">Shërbimet</a>
+        <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
+        <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
+        <div class="lang">
+          <button class="active" data-lang="sq" type="button">SQ</button>
+          <button data-lang="en" type="button">EN</button>
+        </div>
+        <a class="btn primary" href="tel:+38349159380" data-i18n="call_now">Thirr tani</a>
+      </nav>
+    </div></div>
   </header>
 
   <main>
-    <section class="pagehead">
-      <div class="container">
-        <h1 data-i18n="services_title">Shërbimet tona</h1>
-        <p data-i18n="services_sub">Instalim, servis dhe mirëmbajtje për klima dhe pompa termike – për shtëpi dhe biznese.</p>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <div class="cards">
-          <div class="card"><h3 data-i18n="s1">Instalim Klima</h3><p data-i18n="s1t"></p></div>
-          <div class="card"><h3 data-i18n="s2">Servis & Riparim Klima</h3><p data-i18n="s2t"></p></div>
-          <div class="card"><h3 data-i18n="s3">Mirëmbajtje Sezonale</h3><p data-i18n="s3t"></p></div>
-          <div class="card"><h3 data-i18n="s4">Pompa Termike</h3><p data-i18n="s4t"></p></div>
-          <div class="card"><h3 data-i18n="s5">Zgjidhje për Biznese</h3><p data-i18n="s5t"></p></div>
-          <div class="card"><h3 data-i18n="s6">Konsulencë & Ofertim</h3><p data-i18n="s6t"></p></div>
+        <div class="reveal">
+          <h2 data-i18n="sec_services">Shërbimet kryesore</h2>
+          <p class="lead" data-i18n="sec_services_lead"></p>
         </div>
-      </div>
-    </section>
 
-    <section class="cta">
-      <div class="container">
-        <div class="row">
-          <div>
-            <h3 style="margin:0 0 6px" data-i18n="cta_title">Gati për ofertë?</h3>
-            <p data-i18n="cta_text"></p>
+        <div class="grid3">
+          <div class="card reveal">
+            <h3 data-i18n="s1t"></h3>
+            <p data-i18n="s1d"></p>
           </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" href="contact.html" data-i18n="cta_btn">Kërko ofertë</a>
-            <a class="btn ghost" href="mailto:dionitkurti@gmail.com">Email</a>
+          <div class="card reveal">
+            <h3 data-i18n="s2t"></h3>
+            <p data-i18n="s2d"></p>
+          </div>
+          <div class="card reveal">
+            <h3 data-i18n="s3t"></h3>
+            <p data-i18n="s3d"></p>
           </div>
         </div>
+
+        <div class="cta" style="margin-top:28px;border-radius:22px">
+          <div class="container">
+            <div class="row reveal">
+              <div>
+                <h3 style="margin:0 0 6px">Ready for a quote?</h3>
+                <p>Send us m² + location — quick response.</p>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn primary" href="contact.html">Contact</a>
+                <a class="btn ghost" href="https://wa.me/38349159380" target="_blank" rel="noreferrer">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <small>© <span id="y"></span> PIRAMIDA HVAC</small>
-        <small><a href="mailto:dionitkurti@gmail.com">dionitkurti@gmail.com</a> • <a href="tel:+38349159380">+383 49 159 380</a></small>
-      </div>
-    </div>
+    <div class="container"><div class="row">
+      <small>© 2026 PIRAMIDA HVAC</small>
+      <small>dionitkurti@gmail.com • +383 49 159 380</small>
+    </div></div>
   </footer>
 
-  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
