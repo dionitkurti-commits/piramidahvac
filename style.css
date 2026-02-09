@@ -255,10 +255,10 @@ a{color:inherit;text-decoration:none}
 
 /* Scroll reveal animation */
 .reveal{
-  opacity:0;
-  transform:translateY(14px);
-  transition:opacity .6s ease, transform .6s ease;
+  opacity:1;
+  transform:none;
 }
+
 .reveal.show{
   opacity:1;
   transform:translateY(0);
