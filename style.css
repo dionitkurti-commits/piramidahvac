@@ -145,6 +145,7 @@ a{color:inherit;text-decoration:none}
   animation:gradMove 10s ease-in-out infinite;
   opacity:.55;
 }
+
 @keyframes gradMove{
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
