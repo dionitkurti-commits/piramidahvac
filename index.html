@@ -2,192 +2,352 @@
 <html lang="sq">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PIRAMIDA HVAC – Klima & Pompa Termike</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PIRAMIDA HVAC</title>
+  <link rel="stylesheet" href="style.css?v=20260218" />
 </head>
-<body>
 
-<div class="topbar">
-  <div class="container">
-    <div class="row">
-      <span class="pill">📞 <strong data-phone-display>+383 44 635 966</strong></span>
-      <span class="pill">📍 <span data-address>Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span></span>
-      <span class="pill">✉️ <span data-email>piramida.hvac@gmail.com</span></span>
-    </div>
-  </div>
-</div>
+<body data-title-sq="PIRAMIDA HVAC — Ballina" data-title-en="PIRAMIDA HVAC — Home">
 
-<header class="header">
-  <div class="container">
-    <div class="row">
-      <a class="brand" href="index.html">
-        <span class="logo"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo"></span>
-        <span>
-          <div class="t1">PIRAMIDA HVAC</div>
-          <div class="t2">HVAC • AC • Heat Pumps</div>
-        </span>
-      </a>
-
-      <div class="hamburger"><button type="button" data-burger aria-label="Menu">☰</button></div>
-
-      <nav class="nav" data-nav>
-        <a class="link active" href="index.html" data-i18n="nav_home">Ballina</a>
-        <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
-        <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
-        <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
-
-        <div class="lang">
-          <button class="active" data-lang="sq" type="button">SQ</button>
-          <button data-lang="en" type="button">EN</button>
-        </div>
-
-        <a class="btn primary" data-phone-tel href="tel:+38344635966" data-i18n="call_now">Thirr tani</a>
-      </nav>
-    </div>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
+  <!-- TOPBAR -->
+  <div class="topbar">
     <div class="container">
-      <div class="heroGrid">
-        <div class="reveal">
-          <h1 data-i18n="hero_title">Klima & Pompa Termike — instalim, servis dhe zgjidhje efikase</h1>
-          <p class="sub" data-i18n="hero_sub">Për shtëpi dhe biznese. Punë e pastër, korrektësi, dhe performancë që e ndjen çdo ditë.</p>
+      <div class="row">
+        <div class="pills">
+          <a class="pill" href="tel:+38344635966" aria-label="Call">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .3 2 .5 3.1.5.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.3 22.2 1.8 13.7 1.8 3.9 1.8 3.2 2.3 2.7 3 2.7h3.7c.7 0 1.2.5 1.2 1.2 0 1.1.2 2.1.5 3.1.1.4 0 .9-.2 1.2L6.6 10.8z" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>+383 44 635 966</span>
+          </a>
 
-          <div class="badges">
-            <span class="badge" data-i18n="badge_fast">⚡ Reagim i shpejtë</span>
-            <span class="badge" data-i18n="badge_clean">🧼 Punë e pastër</span>
-            <span class="badge" data-i18n="badge_eff">💡 Kursim energjie</span>
-          </div>
+          <a class="pill" href="https://www.google.com/maps/place/Lagjja+Eliza/@42.6453473,21.1048584,17z/data=!3m1!4b1!4m6!3m5!1s0x13549f00254c1eff:0x3bc9f4c4c2e40a45!8m2!3d42.6453473!4d21.1074333!16s%2Fg%2F11lnmsnhm9?entry=ttu" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-5.2 7-12a7 7 0 10-14 0c0 6.8 7 12 7 12z" stroke="currentColor" stroke-width="1.6"/><path d="M12 13.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4z" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span data-sq="Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë" data-en="Hamdi Grajqevci St., Eliza Neighborhood, Fushë Kosovë"></span>
+          </a>
 
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-            <a class="btn primary" href="contact.html" data-i18n="cta_quote">Kërko ofertë</a>
-            <a class="btn" href="services.html" data-i18n="cta_services">Shiko shërbimet</a>
-            <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
-          </div>
-
-          <div class="stats">
-            <div class="stat reveal">
-              <div class="num" data-count="250" data-suffix="+">0+</div>
-              <div class="label">Instalime & servisime</div>
-            </div>
-            <div class="stat reveal">
-              <div class="num" data-count="24" data-suffix="/7">0/7</div>
-              <div class="label">Kontakt & urgjenca</div>
-            </div>
-            <div class="stat reveal">
-              <div class="num" data-count="2" data-suffix="y">0y</div>
-              <div class="label">Garanci pune (ops.)</div>
-            </div>
-            <div class="stat reveal">
-              <div class="num" data-count="98" data-suffix="%">0%</div>
-              <div class="label">Kënaqësi klientësh</div>
-            </div>
-          </div>
+          <a class="pill" href="mailto:piramida.hvac@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>piramida.hvac@gmail.com</span>
+          </a>
         </div>
 
-        <aside class="panel reveal">
-          <b data-i18n="panel_title">Pse na zgjedhin klientët</b>
-          <ul>
-            <li data-i18n="panel_li1">Instalim profesional (vakumim + testim)</li>
-            <li data-i18n="panel_li2">Servis & pastrim sezonal</li>
-            <li data-i18n="panel_li3">Pompa termike — dimensionim sipas m²</li>
-            <li data-i18n="panel_li4">Komunikim i qartë + ofertë e drejtë</li>
-          </ul>
-          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" data-phone-tel href="tel:+38344635966">📞 Call</a>
-            <a class="btn" href="services.html">✨ Sinclair Products</a>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="reveal" data-i18n="sec_services">Shërbimet kryesore</h2>
-      <p class="lead reveal" data-i18n="sec_services_lead">Zgjidhje të plota për ftohje/ngrohje — nga instalimi te mirëmbajtja.</p>
-
-      <div class="grid3">
-        <div class="card reveal">
-          <div class="icon">❄️</div>
-          <h3 data-i18n="s1t">Instalim klima</h3>
-          <p data-i18n="s1d">Montim i rregullt, vakumim, testim dhe konfigurim.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">🧼</div>
-          <h3 data-i18n="s2t">Servis & pastrim</h3>
-          <p data-i18n="s2d">Diagnostikim, pastrim profesional dhe riparime.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">🔥</div>
-          <h3 data-i18n="s3t">Pompa termike</h3>
-          <p data-i18n="s3d">Instalim, servis dhe optimizim për kursim energjie.</p>
+        <div class="langSwitch">
+          <button class="langBtn" data-lang="sq">SQ</button>
+          <button class="langBtn" data-lang="en">EN</button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="cta">
+  <!-- HEADER -->
+  <header class="header">
     <div class="container">
-      <div class="row reveal">
+      <div class="row">
+        <a class="brand" href="index.html">
+          <div class="brandLogo">
+            <img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo">
+          </div>
+          <div class="brandText">
+            <b>PIRAMIDA HVAC</b>
+            <small>HVAC • AC • Heat Pumps</small>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Main">
+          <a class="active" href="index.html" data-sq="Ballina" data-en="Home"></a>
+          <a href="services.html" data-sq="Shërbimet" data-en="Services"></a>
+          <a href="products.html" data-sq="Produktet" data-en="Products"></a>
+          <a href="about.html" data-sq="Rreth Nesh" data-en="About"></a>
+          <a href="contact.html" data-sq="Kontakt" data-en="Contact"></a>
+        </nav>
+
+        <div class="headerActions">
+          <button class="burger" data-burger aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+          <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+        </div>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="mobileNav" data-mobile>
+        <a class="active" href="index.html" data-sq="Ballina" data-en="Home"></a>
+        <a href="services.html" data-sq="Shërbimet" data-en="Services"></a>
+        <a href="products.html" data-sq="Produktet" data-en="Products"></a>
+        <a href="about.html" data-sq="Rreth Nesh" data-en="About"></a>
+        <a href="contact.html" data-sq="Kontakt" data-en="Contact"></a>
+        <div class="cta">
+          <a class="btn primary" style="width:100%" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroCard reveal">
+          <div class="orbs">
+            <div class="orb" style="left:-90px; top:-80px;"></div>
+            <div class="orb red" style="right:-120px; top:-90px;"></div>
+
+            <!-- floating icons -->
+            <div class="iconFloat i1" title="Cooling">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4.2 6.2l15.6 11.6M19.8 6.2L4.2 17.8" stroke="white" stroke-width="1.6" opacity=".9"/></svg>
+            </div>
+            <div class="iconFloat i2" title="Heat">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2s4 4 4 8a4 4 0 11-8 0c0-4 4-8 4-8z" stroke="white" stroke-width="1.6"/><path d="M10 14c0 2 2 4 2 4s2-2 2-4" stroke="white" stroke-width="1.6" opacity=".9"/></svg>
+            </div>
+            <div class="iconFloat i3" title="Airflow">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 10c5-4 11-4 16 0M4 14c5 4 11 4 16 0" stroke="white" stroke-width="1.6"/></svg>
+            </div>
+            <div class="iconFloat i4" title="Efficiency">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 6l-8 14-4-8-4 6" stroke="white" stroke-width="1.6"/></svg>
+            </div>
+          </div>
+
+          <div class="heroInner">
+            <div>
+              <div class="kicker">
+                <i></i>
+                <span data-sq="Instalim • Servis • Pompa Termike" data-en="Installation • Service • Heat Pumps"></span>
+              </div>
+
+              <h1 data-html="1"
+                  data-sq="Klima & Pompa Termike<br>që punojnë — jo që duken mirë"
+                  data-en="AC & Heat Pumps<br>that perform — not just look good"></h1>
+
+              <p data-sq="Zgjidhje profesionale për shtëpi dhe biznes: instalim i pastër, servis i shpejtë dhe optimizim për kursim energjie."
+                 data-en="Professional solutions for homes and businesses: clean installation, fast service, and efficiency tuning to save energy."></p>
+
+              <div class="heroBadges">
+                <div class="badge"><span></span><span data-sq="Instalim i pastër & i sigurt" data-en="Clean & safe installation"></span></div>
+                <div class="badge"><span></span><span data-sq="Mirëmbajtje sezonale" data-en="Seasonal maintenance"></span></div>
+                <div class="badge"><span></span><span data-sq="Konsulencë për zgjedhje të duhur" data-en="Right-size consultation"></span></div>
+              </div>
+
+              <div class="heroCtas">
+                <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+                <a class="btn ghost" href="services.html" data-sq="Shiko shërbimet" data-en="View services"></a>
+                <a class="btn ghost" href="products.html" data-sq="Produktet Sinclair" data-en="Sinclair products"></a>
+                <a class="btn ghost" href="https://wa.me/38344635966" target="_blank" rel="noopener">WhatsApp</a>
+              </div>
+
+              <div class="heroStats">
+                <div class="stat">
+                  <b data-count="250" data-suffix="+">0+</b>
+                  <small data-sq="Instalime & servise" data-en="Installations & services"></small>
+                </div>
+                <div class="stat">
+                  <b data-count="24" data-suffix="/7">0/7</b>
+                  <small data-sq="Disponueshmëri" data-en="Availability"></small>
+                </div>
+                <div class="stat">
+                  <b data-count="2" data-suffix="y">0y</b>
+                  <small data-sq="Garanci pune (ops.)" data-en="Work warranty (opt.)"></small>
+                </div>
+                <div class="stat">
+                  <b data-count="98" data-suffix="%">0%</b>
+                  <small data-sq="Kënaqësi klientësh" data-en="Client satisfaction"></small>
+                </div>
+              </div>
+            </div>
+
+            <aside class="heroPanel">
+              <div>
+                <div class="panelTitle" data-sq="Pse na zgjedhin klientët" data-en="Why clients choose us"></div>
+                <ul class="panelList">
+                  <li data-sq="Puna e pastër: vakumim + testim" data-en="Clean work: vacuum + testing"></li>
+                  <li data-sq="Sugjerim i saktë për kapacitetin" data-en="Proper capacity recommendation"></li>
+                  <li data-sq="Servis i shpejtë & pjesë rezervë" data-en="Fast service & spare parts"></li>
+                  <li data-sq="Optimizim për kursim energjie" data-en="Efficiency tuning to save energy"></li>
+                </ul>
+              </div>
+
+              <div class="panelActions">
+                <a class="btn primary" href="tel:+38344635966" data-sq="Thirr tani" data-en="Call now"></a>
+                <a class="btn secondary" href="contact.html#quote" data-sq="Dërgo kërkesë" data-en="Send request"></a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="section">
+      <div class="container">
+        <div class="sectionTitle reveal">
+          <div>
+            <h2 data-sq="Shërbimet kryesore" data-en="Core services"></h2>
+            <p data-sq="Nga instalimi te mirëmbajtja — gjithçka në një vend."
+               data-en="From installation to maintenance — everything in one place."></p>
+          </div>
+          <a class="btn" href="services.html" data-sq="Detaje" data-en="Details"></a>
+        </div>
+
+        <div class="grid cols3">
+          <div class="card cardGlow reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <h3 data-sq="Instalim Klima (Split/Multisplit)" data-en="AC Installation (Split/Multisplit)"></h3>
+            <p data-sq="Montim, vakumim, testim dhe konfigurim për performancë maksimale."
+               data-en="Mounting, vacuuming, testing and setup for maximum performance."></p>
+          </div>
+
+          <div class="card cardGlow reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 109 9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <h3 data-sq="Servis & Mirëmbajtje" data-en="Service & Maintenance"></h3>
+            <p data-sq="Pastrim sezonal, diagnostikim, mbushje gazi dhe kontroll i plotë."
+               data-en="Seasonal cleaning, diagnostics, gas refill and full system check."></p>
+          </div>
+
+          <div class="card cardGlow reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2s4 4 4 8a4 4 0 11-8 0c0-4 4-8 4-8z" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <h3 data-sq="Pompa Termike" data-en="Heat Pumps"></h3>
+            <p data-sq="Zgjidhje për ngrohje/ftohje — dimensionim dhe instalim profesional."
+               data-en="Heating/cooling solutions — proper sizing and professional installation."></p>
+          </div>
+        </div>
+
+        <div class="strip reveal">
+          <div class="inner">
+            <div>
+              <b data-sq="Gati për ofertë?" data-en="Ready for a quote?"></b><br>
+              <span data-sq="Na trego m² dhe lokacionin — të kthejmë përgjigje shpejt."
+                    data-en="Tell us your m² and location — we reply fast."></span>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+              <a class="btn ghost" href="https://wa.me/38344635966" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS + PRODUCTS -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="card cardGlow reveal">
+            <h3 data-sq="Proces i qartë (pa stres)" data-en="A clear process (no stress)"></h3>
+            <p class="m0" data-sq="Puna jonë është me standard: matje → ofertë → instalim → testim → suport."
+               data-en="We follow a standard: assessment → offer → install → test → support."></p>
+            <div class="hr"></div>
+            <p class="small m0" data-sq="✓ Inspektim & rekomandim kapaciteti (BTU/kW)"
+               data-en="✓ Capacity recommendation (BTU/kW)"></p>
+            <p class="small m0" data-sq="✓ Instalime të pastra + vakumim i domosdoshëm"
+               data-en="✓ Clean installs + mandatory vacuuming"></p>
+            <p class="small m0" data-sq="✓ Testim dhe konfigurim për kursim"
+               data-en="✓ Testing and efficiency setup"></p>
+          </div>
+
+          <div class="card cardGlow reveal">
+            <h3 data-sq="Produktet Sinclair (showcase)" data-en="Sinclair products (showcase)"></h3>
+            <p class="m0" data-sq="Në faqe të produkteve ke kategori + foto + animacione për prezantim."
+               data-en="On the products page you’ll find categories + photos + animations for presentation."></p>
+            <div class="hr"></div>
+            <a class="btn primary" href="products.html" data-sq="Shiko produktet" data-en="View products"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="sectionTitle reveal">
+          <div>
+            <h2 data-sq="Pyetje të shpeshta" data-en="FAQ"></h2>
+            <p data-sq="Përgjigje të shkurta për gjërat që pyesin klientët më shpesh."
+               data-en="Short answers to what clients ask most often."></p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary data-sq="Çfarë kapaciteti më duhet?" data-en="What capacity do I need?"></summary>
+            <p data-sq="Varet nga m², izolimi dhe orientimi. Na dërgo m² + lokacionin dhe të sugjerojmë opsionin optimal."
+               data-en="It depends on m², insulation and orientation. Send m² + location and we’ll recommend the optimal option."></p>
+          </details>
+
+          <details class="reveal">
+            <summary data-sq="A bëni mirëmbajtje sezonale?" data-en="Do you do seasonal maintenance?"></summary>
+            <p data-sq="Po. Pastrim + kontroll i presioneve + testim funksional për performancë dhe jetëgjatësi."
+               data-en="Yes. Cleaning + pressure checks + functional testing for performance and longevity."></p>
+          </details>
+
+          <details class="reveal">
+            <summary data-sq="A mund të kërkoj ofertë online?" data-en="Can I request a quote online?"></summary>
+            <p data-sq="Po — te Kontakt mund ta dërgosh kërkesën dhe të kontaktojmë shpejt."
+               data-en="Yes — on Contact you can send a request and we’ll reach out quickly."></p>
+          </details>
+
+          <details class="reveal">
+            <summary data-sq="Sa shpejt vjen ekipi?" data-en="How fast can you come?"></summary>
+            <p data-sq="Varet nga terminet, por zakonisht organizohemi shpejt. Thirr ose shkruaj në WhatsApp."
+               data-en="Depends on schedule, but we usually organize quickly. Call or message WhatsApp."></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="inner">
         <div>
-          <h3 style="margin:0 0 6px">Gati për ofertë?</h3>
-          <p class="lead" style="margin:0">Na dërgo m² dhe lokacionin — të kthejmë përgjigje shpejt.</p>
+          <h4>PIRAMIDA HVAC</h4>
+          <p data-sq="Instalim, servis dhe mirëmbajtje për klima & pompa termike. Punë e pastër, korrektësi dhe zgjidhje efikase."
+             data-en="Installation, service & maintenance for AC & heat pumps. Clean work, correctness and efficient solutions."></p>
+          <div class="miniPills">
+            <span class="mini">AC</span>
+            <span class="mini" data-sq="Pompa Termike" data-en="Heat Pumps"></span>
+            <span class="mini" data-sq="Servis" data-en="Service"></span>
+          </div>
         </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn primary" href="contact.html">Kërko ofertë</a>
-          <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
+
+        <div>
+          <h4 data-sq="Linka të shpejta" data-en="Quick links"></h4>
+          <p><a href="index.html" data-sq="Ballina" data-en="Home"></a></p>
+          <p><a href="services.html" data-sq="Shërbimet" data-en="Services"></a></p>
+          <p><a href="products.html" data-sq="Produktet" data-en="Products"></a></p>
+          <p><a href="about.html" data-sq="Rreth Nesh" data-en="About"></a></p>
+          <p><a href="contact.html" data-sq="Kontakt" data-en="Contact"></a></p>
+        </div>
+
+        <div>
+          <h4 data-sq="Kontakt" data-en="Contact"></h4>
+          <p><a href="tel:+38344635966">+383 44 635 966</a></p>
+          <p><a href="mailto:piramida.hvac@gmail.com">piramida.hvac@gmail.com</a></p>
+          <p>
+            <a href="https://www.google.com/maps/place/Lagjja+Eliza/@42.6453473,21.1048584,17z/data=!3m1!4b1!4m6!3m5!1s0x13549f00254c1eff:0x3bc9f4c4c2e40a45!8m2!3d42.6453473!4d21.1074333!16s%2Fg%2F11lnmsnhm9?entry=ttu" target="_blank" rel="noopener"
+               data-sq="Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë"
+               data-en="Hamdi Grajqevci St., Eliza Neighborhood, Fushë Kosovë"></a>
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+            <a class="btn" href="https://wa.me/38344635966" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
 
-<a class="whatsapp" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-  <span class="waIcon">💬</span>
-</a>
-
-<footer class="footer">
-  <div class="container footerGrid">
-    <div>
-      <h4 data-i18n="footer_about_title">Për ne</h4>
-      <p data-i18n="footer_about_text">Instalim, servis dhe mirëmbajtje për klima & pompa termike. Punë e pastër, korrektësi, dhe zgjidhje efikase.</p>
-      <div class="kmini">
-        <span>❄️ AC</span><span>🔥 Heat Pumps</span><span>🧼 Service</span>
+      <div class="footerBottom">
+        <span>© <span data-year></span> PIRAMIDA HVAC</span>
+        <span data-sq="Fushë Kosovë • Kosovë" data-en="Fushë Kosovë • Kosovo"></span>
       </div>
     </div>
+  </footer>
 
-    <div>
-      <h4 data-i18n="footer_links_title">Linka të shpejta</h4>
-      <div class="footerLinks">
-        <a href="index.html">Ballina</a>
-        <a href="services.html">Shërbimet</a>
-        <a href="about.html">Rreth Nesh</a>
-        <a href="contact.html">Kontakt</a>
-      </div>
-    </div>
-
-    <div>
-      <h4 data-i18n="footer_contact_title">Kontakt</h4>
-      <p>📞 <a data-phone-tel href="tel:+38344635966"><span data-phone-display>+383 44 635 966</span></a></p>
-      <p>✉️ <a data-email-mailto href="mailto:piramida.hvac@gmail.com"><span data-email>piramida.hvac@gmail.com</span></a></p>
-      <p>📍 <span data-address>Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span></p>
-      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn primary" href="contact.html">Kërko ofertë</a>
-        <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container footerBottom">
-    <small>© 2026 PIRAMIDA HVAC • <span data-i18n="footer_rights">Të gjitha të drejtat të rezervuara.</span></small>
-    <small><span data-email>piramida.hvac@gmail.com</span> • <span data-phone-display>+383 44 635 966</span></small>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+  <script src="app.js?v=20260218"></script>
 </body>
 </html>
