@@ -2,176 +2,107 @@ document.documentElement.classList.add("js");
 
 (function () {
   const PHONE_DISPLAY = "+383 44 635 966";
-  const PHONE_TEL = "+38344635966";        // pa hapsira
+  const PHONE_TEL = "+38344635966";
   const WHATSAPP = "38344635966";
   const EMAIL = "piramida.hvac@gmail.com";
+  const ADDRESS = "Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë";
 
   const I18N = {
     sq: {
       nav_home:"Ballina", nav_services:"Shërbimet", nav_about:"Rreth Nesh", nav_contact:"Kontakt", call_now:"Thirr tani",
 
-      hero_title:"Instalim & Mirëmbajtje Klima dhe Pompa Termike",
-      hero_sub:"Zgjidhje efikase për ngrohje dhe ftohje — për shtëpi dhe biznese. Punë e pastër, korrektësi dhe shërbim i shpejtë.",
-      badge_fast:"⚡ Reagim i shpejtë", badge_clean:"🧼 Punë e pastër", badge_eff:"💡 Efikasitet energjie",
+      hero_title:"Klima & Pompa Termike — instalim, servis dhe zgjidhje efikase",
+      hero_sub:"Për shtëpi dhe biznese. Punë e pastër, korrektësi, dhe performancë që e ndjen çdo ditë.",
+      badge_fast:"⚡ Reagim i shpejtë", badge_clean:"🧼 Punë e pastër", badge_eff:"💡 Kursim energjie",
       cta_quote:"Kërko ofertë", cta_services:"Shiko shërbimet",
-      panel_title:"Shërbim i shpejtë & i sigurt",
-      panel_li1:"Instalim profesional i klimave",
-      panel_li2:"Servis, pastrim dhe mirëmbajtje sezonale",
-      panel_li3:"Pompa termike — instalim & servis",
-      panel_li4:"Konsulencë dhe ofertim sipas m²",
 
-      stat1t:"Instalime & servisime", stat2t:"Kontakt & urgjenca", stat3t:"Garanci pune (ops.)", stat4t:"Kënaqësi klientësh",
+      panel_title:"Pse na zgjedhin klientët",
+      panel_li1:"Instalim profesional (vakumim + testim)",
+      panel_li2:"Servis & pastrim sezonal",
+      panel_li3:"Pompa termike — dimensionim sipas m²",
+      panel_li4:"Komunikim i qartë + ofertë e drejtë",
 
       sec_services:"Shërbimet kryesore",
-      sec_services_lead:"Gjithçka që të duhet për komoditet gjatë gjithë vitit — instalim, servis dhe zgjidhje efikase.",
-      s1t:"Instalim Klima", s1d:"Montim, vakumim, testim dhe rregullim për performancë maksimale.",
-      s2t:"Servis & Mirëmbajtje", s2d:"Diagnostikim, pastrim, kontroll dhe riparim — që pajisja të punojë si duhet.",
-      s3t:"Pompa Termike", s3d:"Dimensionim, instalim dhe servis për ngrohje/fhothje efikase.",
+      sec_services_lead:"Zgjidhje të plota për ftohje/ngrohje — nga instalimi te mirëmbajtja.",
+      s1t:"Instalim klima", s1d:"Montim i rregullt, vakumim, testim dhe konfigurim.",
+      s2t:"Servis & pastrim", s2d:"Diagnostikim, pastrim profesional dhe riparime.",
+      s3t:"Pompa termike", s3d:"Instalim, servis dhe optimizim për kursim energjie.",
 
-      sec_gallery:"Punë e pastër, rezultat i sigurt",
-      sec_gallery_lead:"Disa shembuj të asaj çka ofrojmë: instalim i rregullt, servis profesional dhe zgjidhje efikase.",
-      g1t:"Instalim i rregullt", g1d:"Vakumim, testim dhe konfigurim i saktë.",
-      g2t:"Servis sezonal", g2d:"Pastrim + kontroll për performancë.",
-      g3t:"Pompa termike", g3d:"Zgjidhje moderne për kursim energjie.",
-
-      sec_why:"Pse PIRAMIDA HVAC?",
-      sec_why_lead:"Klientët paguajnë për siguri, korrektësi dhe rezultat. Këto janë arsyet pse na zgjedhin.",
-      w1t:"Çmim i drejtë & transparent", w1d:"Ofertë e qartë pa surpriza — rekomandojmë zgjidhjen më të mirë për buxhetin.",
-      w2t:"Punë e pastër & standard", w2d:"Montim i rregullt, linja të pastra dhe testim i plotë para dorëzimit.",
-      w3t:"Efikasitet energjie", w3d:"Të ndihmojmë të zgjedhësh kapacitetin e duhur për m² dhe izolim.",
-
-      sec_process:"Si punojmë",
-      sec_process_lead:"Proces i thjeshtë, profesional dhe i shpejtë — nga inspektimi te dorëzimi.",
-      p1t:"Inspektim & këshillim", p1d:"E vlerësojmë hapësirën, m², izolimin dhe nevojën reale.",
-      p2t:"Ofertë brenda ditës", p2d:"Të japim çmim + opsionet më të mira për performancë/ekonomi.",
-      p3t:"Instalim profesional", p3d:"Vakumim, testim, konfigurim — punë e pastër dhe e sigurt.",
-      p4t:"Kontroll & garanci", p4d:"Kontroll final dhe udhëzim për përdorim; opsionalisht mirëmbajtje sezonale.",
-
-      sec_test:"Çfarë thonë klientët",
-      sec_test_lead:"Shembuj feedback-u (mund t’i zëvendësojmë me emra realë).",
-
-      sec_faq:"Pyetjet më të shpeshta",
-      faq1q:"Sa kohë zgjat instalimi i klimës?", faq1a:"Zakonisht 1–3 orë (varësisht nga vendosja, distanca dhe punimet).",
-      faq2q:"A bëni pastrim/servis sezonal?", faq2a:"Po. Rekomandohet 2 herë në vit për performancë dhe higjienë.",
-      faq3q:"Si zgjedh kapacitetin e duhur?", faq3a:"Varet nga m², izolimi dhe orientimi. Na shkruaj m² dhe lokacionin — të udhëzojmë saktë.",
-
-      cta_title:"Gati për ofertë?",
-      cta_text:"Na dërgo m² dhe lokacionin — të kthejmë përgjigje shpejt.",
-      cta_btn:"Kërko ofertë",
-      cta_whats:"WhatsApp",
-
-      services_h1:"Shërbimet tona",
-      services_p:"Instalim, servis, pastrim sezonal dhe pompa termike — zgjidhje profesionale për shtëpi dhe biznese.",
-      services_card1t:"Instalim Klima (Split/Multisplit)", services_card1p:"Montim, vakumim, testim, konfigurim dhe dorëzim i pastër.",
-      services_card2t:"Servis & Pastrim", services_card2p:"Pastrim i filtrave/avulluesit, kontroll gazi dhe diagnostikim.",
-      services_card3t:"Riparime", services_card3p:"Riparime të shpejta me diagnozë të qartë dhe zgjidhje të sigurt.",
-      services_card4t:"Pompa Termike", services_card4p:"Dimensionim sipas m², instalim, servis dhe optimizim.",
-      services_card5t:"Konsulencë", services_card5p:"Udhëzim për zgjedhjen e kapacitetit të duhur dhe kursim energjie.",
-      services_card6t:"Mirëmbajtje sezonale", services_card6p:"Plan mirëmbajtjeje për performancë dhe jetëgjatësi.",
+      sec_products:"Produktet Sinclair që mund t’i ofrojmë",
+      sec_products_lead:"Produktet/fotot/përshkrimet dalin automatikisht pasi ta ekzekutosh skriptën e sinkronizimit.",
+      prod_search:"Kërko produkt…", prod_all:"Të gjitha", prod_ac:"Klima", prod_hp:"Pompa termike", prod_other:"Tjera",
+      prod_more:"Detaje", prod_official:"Hape te prodhuesi",
+      modal_features:"Veçori",
 
       about_h1:"Rreth PIRAMIDA HVAC",
-      about_p:"Ne fokusohemi në punë të pastër, korrektësi dhe zgjidhje efikase për ngrohje/fhothje gjatë gjithë vitit.",
-      about_m1t:"Misioni", about_m1p:"Të ofrojmë shërbime HVAC profesionale me standard të lartë dhe komunikim të qartë.",
-      about_m2t:"Vizioni", about_m2p:"Të bëhemi zgjedhja #1 për klima & pompa termike në zonë, me reputacion të fortë.",
-      about_v1t:"✅ Korrektësi", about_v1p:"Respektojmë kohën dhe mbajmë klientin të informuar.",
-      about_v2t:"✅ Standard", about_v2p:"Vakumim + testim para dorëzimit, çdo herë.",
-      about_v3t:"✅ Punë e pastër", about_v3p:"Linja të rregullta dhe lokacion i pastër pas përfundimit.",
+      about_p:"Ne fokusohemi në punë të pastër, korrektësi dhe zgjidhje efikase për klima dhe pompa termike.",
 
       contact_h1:"Kontakt",
       contact_p:"Na telefono ose na shkruaj — përgjigjemi shpejt.",
-      contact_details:"Detajet",
-      contact_form:"Forma",
-      map_open:"Hape në Google Maps",
-      map_dir:"Udhëzime",
-      form_name:"Emri", form_phone:"Telefoni", form_msg:"Mesazhi", form_send:"Dërgo"
-    },
+      map_open:"Hape në Google Maps", map_dir:"Udhëzime",
+      form_name:"Emri", form_phone:"Telefoni", form_msg:"Mesazhi", form_send:"Dërgo",
 
+      footer_about_title:"Për ne",
+      footer_about_text:"Instalim, servis dhe mirëmbajtje për klima & pompa termike. Punë e pastër, korrektësi, dhe zgjidhje efikase.",
+      footer_links_title:"Linka të shpejta",
+      footer_contact_title:"Kontakt",
+      footer_rights:"Të gjitha të drejtat të rezervuara."
+    },
     en: {
       nav_home:"Home", nav_services:"Services", nav_about:"About", nav_contact:"Contact", call_now:"Call now",
 
-      hero_title:"AC & Heat Pump Installation and Maintenance",
-      hero_sub:"Efficient heating & cooling for homes and businesses. Clean workmanship, fair pricing, and fast response.",
-      badge_fast:"⚡ Fast response", badge_clean:"🧼 Clean workmanship", badge_eff:"💡 Energy efficiency",
+      hero_title:"AC & Heat Pumps — install, service and efficient solutions",
+      hero_sub:"For homes and businesses. Clean workmanship, fair quoting, and performance you feel every day.",
+      badge_fast:"⚡ Fast response", badge_clean:"🧼 Clean work", badge_eff:"💡 Energy savings",
       cta_quote:"Request a quote", cta_services:"View services",
-      panel_title:"Fast & reliable service",
-      panel_li1:"Professional AC installation",
-      panel_li2:"Service, cleaning & seasonal maintenance",
-      panel_li3:"Heat pumps — install & service",
-      panel_li4:"Consultation based on m²",
 
-      stat1t:"Installations & services", stat2t:"Contact & urgent help", stat3t:"Work warranty (opt.)", stat4t:"Customer satisfaction",
+      panel_title:"Why clients choose us",
+      panel_li1:"Professional installation (vacuum + test)",
+      panel_li2:"Service & seasonal cleaning",
+      panel_li3:"Heat pumps — sizing based on m²",
+      panel_li4:"Clear communication + fair quote",
 
       sec_services:"Core services",
-      sec_services_lead:"Everything you need for year-round comfort — installation, service and efficient solutions.",
-      s1t:"AC Installation", s1d:"Mounting, vacuuming, testing and tuning for maximum performance.",
-      s2t:"Service & Maintenance", s2d:"Diagnostics, cleaning, checks and repairs so your unit runs properly.",
-      s3t:"Heat Pumps", s3d:"Sizing, installation and service for efficient heating/cooling.",
+      sec_services_lead:"Complete heating/cooling solutions — from installation to maintenance.",
+      s1t:"AC installation", s1d:"Neat mounting, vacuuming, testing and setup.",
+      s2t:"Service & cleaning", s2d:"Diagnostics, professional cleaning and repairs.",
+      s3t:"Heat pumps", s3d:"Install, service and optimization for savings.",
 
-      sec_gallery:"Clean work. Reliable results.",
-      sec_gallery_lead:"A few examples of what we deliver: neat installs, professional service, efficient solutions.",
-      g1t:"Neat installation", g1d:"Vacuum, test and correct configuration.",
-      g2t:"Seasonal service", g2d:"Cleaning + inspection for performance.",
-      g3t:"Heat pumps", g3d:"Modern solution for energy savings.",
-
-      sec_why:"Why PIRAMIDA HVAC?",
-      sec_why_lead:"Clients pay for safety, reliability, and results. Here’s why they choose us.",
-      w1t:"Fair & transparent pricing", w1d:"Clear quoting with no surprises — best solution for your budget.",
-      w2t:"Clean, standard workmanship", w2d:"Neat installation, tidy lines and full testing before handover.",
-      w3t:"Energy efficiency first", w3d:"We help you choose the right capacity based on m² and insulation.",
-
-      sec_process:"How we work",
-      sec_process_lead:"Simple, professional, fast — from inspection to handover.",
-      p1t:"Inspection & guidance", p1d:"We assess the space, m², insulation and real needs.",
-      p2t:"Same-day quote", p2d:"You get price + best options for performance/savings.",
-      p3t:"Professional install", p3d:"Vacuum, test, configure — clean and safe work.",
-      p4t:"Final check & care", p4d:"Final inspection + usage tips; optional seasonal maintenance.",
-
-      sec_test:"What clients say",
-      sec_test_lead:"Sample feedback (we can replace with real names later).",
-
-      sec_faq:"FAQ",
-      faq1q:"How long does AC installation take?", faq1a:"Usually 1–3 hours depending on placement and required work.",
-      faq2q:"Do you offer seasonal cleaning/service?", faq2a:"Yes. Recommended twice a year for performance and hygiene.",
-      faq3q:"How do I choose the right capacity?", faq3a:"Depends on m², insulation and orientation. Send m² + location and we’ll advise.",
-
-      cta_title:"Ready for a quote?",
-      cta_text:"Send your m² and location — we’ll reply fast.",
-      cta_btn:"Request a quote",
-      cta_whats:"WhatsApp",
-
-      services_h1:"Our services",
-      services_p:"Installation, service, seasonal cleaning and heat pumps — professional solutions for homes and businesses.",
-      services_card1t:"AC Installation (Split/Multisplit)", services_card1p:"Mounting, vacuuming, testing, setup and clean handover.",
-      services_card2t:"Service & Cleaning", services_card2p:"Filter/coil cleaning, gas check and diagnostics.",
-      services_card3t:"Repairs", services_card3p:"Fast repairs with clear diagnosis and safe fixes.",
-      services_card4t:"Heat Pumps", services_card4p:"Sizing based on m², installation, service and optimization.",
-      services_card5t:"Consultation", services_card5p:"Advice for correct capacity and energy savings.",
-      services_card6t:"Seasonal maintenance", services_card6p:"Maintenance plan for performance and longevity.",
+      sec_products:"Sinclair products we can offer",
+      sec_products_lead:"Products/photos/descriptions appear automatically after running the sync script.",
+      prod_search:"Search product…", prod_all:"All", prod_ac:"Air conditioning", prod_hp:"Heat pumps", prod_other:"Other",
+      prod_more:"Details", prod_official:"Open official page",
+      modal_features:"Features",
 
       about_h1:"About PIRAMIDA HVAC",
-      about_p:"We focus on clean workmanship, reliability and efficient heating/cooling solutions all year round.",
-      about_m1t:"Mission", about_m1p:"Deliver professional HVAC service with high standards and clear communication.",
-      about_m2t:"Vision", about_m2p:"Become the #1 choice for AC & heat pumps in the area with a strong reputation.",
-      about_v1t:"✅ Reliability", about_v1p:"We respect your time and keep you informed.",
-      about_v2t:"✅ Standard", about_v2p:"Vacuum + testing before handover, every time.",
-      about_v3t:"✅ Clean work", about_v3p:"Neat lines and a clean site after completion.",
+      about_p:"We focus on clean workmanship, reliability and efficient AC/heat pump solutions.",
 
       contact_h1:"Contact",
       contact_p:"Call or message us — we respond fast.",
-      contact_details:"Details",
-      contact_form:"Form",
-      map_open:"Open in Google Maps",
-      map_dir:"Directions",
-      form_name:"Name", form_phone:"Phone", form_msg:"Message", form_send:"Send"
+      map_open:"Open in Google Maps", map_dir:"Directions",
+      form_name:"Name", form_phone:"Phone", form_msg:"Message", form_send:"Send",
+
+      footer_about_title:"About",
+      footer_about_text:"Installation, service and maintenance for AC & heat pumps. Clean workmanship, reliability, and efficient solutions.",
+      footer_links_title:"Quick links",
+      footer_contact_title:"Contact",
+      footer_rights:"All rights reserved."
     }
   };
 
-  // Apply language
+  // Fill contact placeholders
+  document.querySelectorAll("[data-phone-display]").forEach(el=>el.textContent = PHONE_DISPLAY);
+  document.querySelectorAll("[data-phone-tel]").forEach(el=>el.setAttribute("href", `tel:${PHONE_TEL}`));
+  document.querySelectorAll("[data-email]").forEach(el=>el.textContent = EMAIL);
+  document.querySelectorAll("[data-email-mailto]").forEach(el=>el.setAttribute("href", `mailto:${EMAIL}`));
+  document.querySelectorAll("[data-whatsapp]").forEach(el=>el.setAttribute("href", `https://wa.me/${WHATSAPP}`));
+  document.querySelectorAll("[data-address]").forEach(el=>el.textContent = ADDRESS);
+
+  // Language
   const langBtns = document.querySelectorAll("[data-lang]");
   function applyLang(lang){
     const d = I18N[lang] || I18N.sq;
     document.documentElement.setAttribute("lang", lang);
-
     document.querySelectorAll("[data-i18n]").forEach(el=>{
       const k = el.getAttribute("data-i18n");
       if(d[k]) el.textContent = d[k];
@@ -180,74 +111,161 @@ document.documentElement.classList.add("js");
       const k = el.getAttribute("data-i18n-ph");
       if(d[k]) el.setAttribute("placeholder", d[k]);
     });
-
     langBtns.forEach(b=>b.classList.toggle("active", b.dataset.lang===lang));
     localStorage.setItem("lang", lang);
   }
   langBtns.forEach(b=>b.addEventListener("click", ()=>applyLang(b.dataset.lang)));
   applyLang(localStorage.getItem("lang") || "sq");
 
-  // Reveal
+  // Mobile nav
+  const burger = document.querySelector("[data-burger]");
+  const nav = document.querySelector("[data-nav]");
+  if(burger && nav){
+    burger.addEventListener("click", ()=>{
+      nav.classList.toggle("mobile");
+    });
+  }
+
+  // Reveal + count-up
   const revealEls = document.querySelectorAll(".reveal");
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
       if(e.isIntersecting){
         e.target.classList.add("in");
+
+        // count-up for stats
+        const numEl = e.target.querySelector?.("[data-count]") || (e.target.matches?.("[data-count]") ? e.target : null);
+        if(numEl && !numEl.dataset.done){
+          numEl.dataset.done = "1";
+          const target = parseInt(numEl.dataset.count, 10) || 0;
+          const suffix = numEl.dataset.suffix || "";
+          const start = 0;
+          const dur = 900;
+          const t0 = performance.now();
+          const step = (t)=>{
+            const p = Math.min(1, (t - t0)/dur);
+            const val = Math.floor(start + (target-start) * (p*p*(3-2*p)));
+            numEl.textContent = `${val}${suffix}`;
+            if(p < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+
         io.unobserve(e.target);
       }
     });
   }, {threshold:0.12});
   revealEls.forEach(el=>io.observe(el));
 
-  // Counters
-  const counterEls = document.querySelectorAll("[data-count]");
-  const countIO = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(!e.isIntersecting) return;
-      const el = e.target;
-      const end = parseInt(el.dataset.count,10);
-      const suffix = el.dataset.suffix || "";
-      const duration = 900;
-      const start = performance.now();
-      const tick = (t)=>{
-        const p = Math.min(1, (t-start)/duration);
-        const val = Math.floor(p*end);
-        el.textContent = `${val}${suffix}`;
-        if(p<1) requestAnimationFrame(tick);
-        else el.textContent = `${end}${suffix}`;
-      };
-      requestAnimationFrame(tick);
-      countIO.unobserve(el);
-    });
-  }, {threshold:0.35});
-  counterEls.forEach(el=>countIO.observe(el));
+  // Products loader (services page)
+  async function loadProducts(){
+    const grid = document.getElementById("productGrid");
+    if(!grid) return;
 
-  // Testimonials (optional)
-  const qEl = document.getElementById("quote");
-  const aEl = document.getElementById("author");
-  const dots = document.querySelectorAll(".dot");
-  if(qEl && aEl && dots.length){
-    const slides = [
-      {q:"“Instalimi u bë shumë pastër dhe shpejt. Klima punon perfekt.”", a:"Arben • Fushë Kosovë"},
-      {q:"“Na udhëzuan saktë për kapacitetin. Shpenzimet ranë ndjeshëm.”", a:"Blerta • Prishtinë"},
-      {q:"“Servis i shpejtë, korrektësi dhe komunikim i mirë.”", a:"Mentor • Obiliq"}
-    ];
-    let i = 0;
-    const render = (idx)=>{
-      qEl.textContent = slides[idx].q;
-      aEl.textContent = slides[idx].a;
-      dots.forEach((d,di)=>d.classList.toggle("on", di===idx));
-    };
-    render(0);
-    setInterval(()=>{ i=(i+1)%slides.length; render(i); }, 4500);
+    const chips = document.querySelectorAll("[data-chip]");
+    const search = document.getElementById("productSearch");
+    const modal = document.getElementById("modalOverlay");
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDesc = document.getElementById("modalDesc");
+    const modalList = document.getElementById("modalList");
+    const modalLink = document.getElementById("modalLink");
+    const closeBtn = document.getElementById("modalClose");
+
+    let items = [];
+    let filter = "all";
+    let q = "";
+
+    function t(obj){
+      const lang = localStorage.getItem("lang") || "sq";
+      if(!obj) return "";
+      if(typeof obj === "string") return obj;
+      return obj[lang] || obj.sq || obj.en || "";
+    }
+    function listT(arr){
+      const lang = localStorage.getItem("lang") || "sq";
+      if(!arr) return [];
+      if(Array.isArray(arr)) return arr;
+      return (arr[lang] || arr.sq || arr.en || []);
+    }
+
+    function match(it){
+      const inFilter = (filter==="all") || (it.type===filter);
+      const txt = (t(it.name)+" "+t(it.category)+" "+t(it.short)).toLowerCase();
+      const inQ = !q || txt.includes(q.toLowerCase());
+      return inFilter && inQ;
+    }
+
+    function render(){
+      grid.innerHTML = "";
+      const shown = items.filter(match);
+      if(!shown.length){
+        grid.innerHTML = `<div class="card" style="grid-column:1/-1"><p style="margin:0;color:var(--muted)">No products loaded yet. Run the sync script locally and commit <b>products.json</b> + images, then refresh.</p></div>`;
+        return;
+      }
+      for(const it of shown){
+        const li = listT(it.highlights).slice(0,3).map(x=>`<li>${x}</li>`).join("");
+        const img = it.imageLocal || it.image || "assets/products/placeholder.jpg";
+        const card = document.createElement("article");
+        card.className = "card productCard reveal";
+        card.innerHTML = `
+          <div class="img"><img loading="lazy" src="${img}" alt="${t(it.name)}"></div>
+          <div class="body">
+            <div class="kicker"><span>${t(it.category) || ""}</span><span>Sinclair</span></div>
+            <div class="title">${t(it.name)}</div>
+            <ul>${li}</ul>
+            <div class="actions">
+              <button class="btn primary" data-open="${it.id}">✨ ${I18N[(localStorage.getItem("lang")||"sq")].prod_more}</button>
+              <a class="btn" href="${it.url||'#'}" target="_blank" rel="noreferrer">${I18N[(localStorage.getItem("lang")||"sq")].prod_official}</a>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+        io.observe(card);
+      }
+
+      grid.querySelectorAll("[data-open]").forEach(btn=>{
+        btn.addEventListener("click", ()=>{
+          const id = btn.getAttribute("data-open");
+          const it = items.find(x=>x.id===id);
+          if(!it) return;
+          const img = it.imageLocal || it.image || "assets/products/placeholder.jpg";
+          modalImg.src = img;
+          modalTitle.textContent = t(it.name);
+          modalDesc.textContent = t(it.short) || t(it.category) || "";
+          modalList.innerHTML = listT(it.highlights).slice(0,8).map(x=>`<li>${x}</li>`).join("");
+          modalLink.href = it.url || "#";
+          modal.classList.add("show");
+        });
+      });
+    }
+
+    function setChip(v){
+      filter = v;
+      chips.forEach(c=>c.classList.toggle("on", c.dataset.chip===v));
+      render();
+    }
+
+    chips.forEach(c=>c.addEventListener("click", ()=>setChip(c.dataset.chip)));
+    if(search) search.addEventListener("input", (e)=>{ q=e.target.value||""; render(); });
+
+    if(closeBtn && modal){
+      closeBtn.addEventListener("click", ()=>modal.classList.remove("show"));
+      modal.addEventListener("click", (e)=>{ if(e.target===modal) modal.classList.remove("show"); });
+      window.addEventListener("keydown",(e)=>{ if(e.key==="Escape") modal.classList.remove("show"); });
+    }
+
+    try{
+      const res = await fetch("products.json", {cache:"no-store"});
+      const data = await res.json();
+      items = Array.isArray(data.items) ? data.items : [];
+      render();
+    }catch(err){
+      items = [];
+      render();
+    }
   }
-
-  // FAQ
-  document.querySelectorAll(".faq").forEach(box=>{
-    const btn = box.querySelector("button");
-    if(!btn) return;
-    btn.addEventListener("click", ()=> box.classList.toggle("open"));
-  });
+  loadProducts();
 
   // Contact form -> mailto
   const form = document.getElementById("contactForm");
@@ -263,16 +281,9 @@ document.documentElement.classList.add("js");
         `${lang==="sq"?"Emri":"Name"}: ${name}\n`+
         `${lang==="sq"?"Telefoni":"Phone"}: ${phone}\n\n`+
         `${lang==="sq"?"Mesazhi":"Message"}:\n${msg}\n\n`+
-        `---\nPhone: ${PHONE_DISPLAY}\nEmail: ${EMAIL}`
+        `---\nPhone: ${PHONE_DISPLAY}\nEmail: ${EMAIL}\nAddress: ${ADDRESS}`
       );
       window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
     });
   }
-
-  // Auto-fill any placeholders in HTML if you used these IDs (optional)
-  document.querySelectorAll("[data-phone-display]").forEach(el=>el.textContent = PHONE_DISPLAY);
-  document.querySelectorAll("[data-phone-tel]").forEach(el=>el.setAttribute("href", `tel:${PHONE_TEL}`));
-  document.querySelectorAll("[data-email]").forEach(el=>el.textContent = EMAIL);
-  document.querySelectorAll("[data-email-mailto]").forEach(el=>el.setAttribute("href", `mailto:${EMAIL}`));
-  document.querySelectorAll("[data-whatsapp]").forEach(el=>el.setAttribute("href", `https://wa.me/${WHATSAPP}`));
 })();
