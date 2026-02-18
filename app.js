@@ -1,16 +1,15 @@
-// Enable safe reveal behavior
 document.documentElement.classList.add("js");
 
 (function () {
-  // ---------------------------
-  // i18n dictionary (SQ / EN)
-  // ---------------------------
+  const PHONE_DISPLAY = "+383 44 635 966";
+  const PHONE_TEL = "+38344635966";        // pa hapsira
+  const WHATSAPP = "38344635966";
+  const EMAIL = "piramida.hvac@gmail.com";
+
   const I18N = {
     sq: {
-      // NAV
       nav_home:"Ballina", nav_services:"Shërbimet", nav_about:"Rreth Nesh", nav_contact:"Kontakt", call_now:"Thirr tani",
 
-      // HOME HERO
       hero_title:"Instalim & Mirëmbajtje Klima dhe Pompa Termike",
       hero_sub:"Zgjidhje efikase për ngrohje dhe ftohje — për shtëpi dhe biznese. Punë e pastër, korrektësi dhe shërbim i shpejtë.",
       badge_fast:"⚡ Reagim i shpejtë", badge_clean:"🧼 Punë e pastër", badge_eff:"💡 Efikasitet energjie",
@@ -21,10 +20,8 @@ document.documentElement.classList.add("js");
       panel_li3:"Pompa termike — instalim & servis",
       panel_li4:"Konsulencë dhe ofertim sipas m²",
 
-      // STATS labels
       stat1t:"Instalime & servisime", stat2t:"Kontakt & urgjenca", stat3t:"Garanci pune (ops.)", stat4t:"Kënaqësi klientësh",
 
-      // SECTIONS
       sec_services:"Shërbimet kryesore",
       sec_services_lead:"Gjithçka që të duhet për komoditet gjatë gjithë vitit — instalim, servis dhe zgjidhje efikase.",
       s1t:"Instalim Klima", s1d:"Montim, vakumim, testim dhe rregullim për performancë maksimale.",
@@ -33,7 +30,6 @@ document.documentElement.classList.add("js");
 
       sec_gallery:"Punë e pastër, rezultat i sigurt",
       sec_gallery_lead:"Disa shembuj të asaj çka ofrojmë: instalim i rregullt, servis profesional dhe zgjidhje efikase.",
-
       g1t:"Instalim i rregullt", g1d:"Vakumim, testim dhe konfigurim i saktë.",
       g2t:"Servis sezonal", g2d:"Pastrim + kontroll për performancë.",
       g3t:"Pompa termike", g3d:"Zgjidhje moderne për kursim energjie.",
@@ -59,13 +55,11 @@ document.documentElement.classList.add("js");
       faq2q:"A bëni pastrim/servis sezonal?", faq2a:"Po. Rekomandohet 2 herë në vit për performancë dhe higjienë.",
       faq3q:"Si zgjedh kapacitetin e duhur?", faq3a:"Varet nga m², izolimi dhe orientimi. Na shkruaj m² dhe lokacionin — të udhëzojmë saktë.",
 
-      // CTA
       cta_title:"Gati për ofertë?",
       cta_text:"Na dërgo m² dhe lokacionin — të kthejmë përgjigje shpejt.",
       cta_btn:"Kërko ofertë",
       cta_whats:"WhatsApp",
 
-      // SERVICES PAGE
       services_h1:"Shërbimet tona",
       services_p:"Instalim, servis, pastrim sezonal dhe pompa termike — zgjidhje profesionale për shtëpi dhe biznese.",
       services_card1t:"Instalim Klima (Split/Multisplit)", services_card1p:"Montim, vakumim, testim, konfigurim dhe dorëzim i pastër.",
@@ -75,7 +69,6 @@ document.documentElement.classList.add("js");
       services_card5t:"Konsulencë", services_card5p:"Udhëzim për zgjedhjen e kapacitetit të duhur dhe kursim energjie.",
       services_card6t:"Mirëmbajtje sezonale", services_card6p:"Plan mirëmbajtjeje për performancë dhe jetëgjatësi.",
 
-      // ABOUT PAGE
       about_h1:"Rreth PIRAMIDA HVAC",
       about_p:"Ne fokusohemi në punë të pastër, korrektësi dhe zgjidhje efikase për ngrohje/fhothje gjatë gjithë vitit.",
       about_m1t:"Misioni", about_m1p:"Të ofrojmë shërbime HVAC profesionale me standard të lartë dhe komunikim të qartë.",
@@ -84,13 +77,12 @@ document.documentElement.classList.add("js");
       about_v2t:"✅ Standard", about_v2p:"Vakumim + testim para dorëzimit, çdo herë.",
       about_v3t:"✅ Punë e pastër", about_v3p:"Linja të rregullta dhe lokacion i pastër pas përfundimit.",
 
-      // CONTACT PAGE
       contact_h1:"Kontakt",
       contact_p:"Na telefono ose na shkruaj — përgjigjemi shpejt.",
       contact_details:"Detajet",
       contact_form:"Forma",
-      map_open:"Open in Google Maps",
-      map_dir:"Directions",
+      map_open:"Hape në Google Maps",
+      map_dir:"Udhëzime",
       form_name:"Emri", form_phone:"Telefoni", form_msg:"Mesazhi", form_send:"Dërgo"
     },
 
@@ -174,8 +166,8 @@ document.documentElement.classList.add("js");
     }
   };
 
+  // Apply language
   const langBtns = document.querySelectorAll("[data-lang]");
-
   function applyLang(lang){
     const d = I18N[lang] || I18N.sq;
     document.documentElement.setAttribute("lang", lang);
@@ -184,7 +176,6 @@ document.documentElement.classList.add("js");
       const k = el.getAttribute("data-i18n");
       if(d[k]) el.textContent = d[k];
     });
-
     document.querySelectorAll("[data-i18n-ph]").forEach(el=>{
       const k = el.getAttribute("data-i18n-ph");
       if(d[k]) el.setAttribute("placeholder", d[k]);
@@ -193,11 +184,10 @@ document.documentElement.classList.add("js");
     langBtns.forEach(b=>b.classList.toggle("active", b.dataset.lang===lang));
     localStorage.setItem("lang", lang);
   }
-
   langBtns.forEach(b=>b.addEventListener("click", ()=>applyLang(b.dataset.lang)));
   applyLang(localStorage.getItem("lang") || "sq");
 
-  // Reveal on scroll
+  // Reveal
   const revealEls = document.querySelectorAll(".reveal");
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
@@ -232,7 +222,7 @@ document.documentElement.classList.add("js");
   }, {threshold:0.35});
   counterEls.forEach(el=>countIO.observe(el));
 
-  // Testimonials slider (only if present)
+  // Testimonials (optional)
   const qEl = document.getElementById("quote");
   const aEl = document.getElementById("author");
   const dots = document.querySelectorAll(".dot");
@@ -252,7 +242,7 @@ document.documentElement.classList.add("js");
     setInterval(()=>{ i=(i+1)%slides.length; render(i); }, 4500);
   }
 
-  // FAQ accordion
+  // FAQ
   document.querySelectorAll(".faq").forEach(box=>{
     const btn = box.querySelector("button");
     if(!btn) return;
@@ -272,9 +262,17 @@ document.documentElement.classList.add("js");
       const body = encodeURIComponent(
         `${lang==="sq"?"Emri":"Name"}: ${name}\n`+
         `${lang==="sq"?"Telefoni":"Phone"}: ${phone}\n\n`+
-        `${lang==="sq"?"Mesazhi":"Message"}:\n${msg}`
+        `${lang==="sq"?"Mesazhi":"Message"}:\n${msg}\n\n`+
+        `---\nPhone: ${PHONE_DISPLAY}\nEmail: ${EMAIL}`
       );
-      window.location.href = `mailto:dionitkurti@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
     });
   }
+
+  // Auto-fill any placeholders in HTML if you used these IDs (optional)
+  document.querySelectorAll("[data-phone-display]").forEach(el=>el.textContent = PHONE_DISPLAY);
+  document.querySelectorAll("[data-phone-tel]").forEach(el=>el.setAttribute("href", `tel:${PHONE_TEL}`));
+  document.querySelectorAll("[data-email]").forEach(el=>el.textContent = EMAIL);
+  document.querySelectorAll("[data-email-mailto]").forEach(el=>el.setAttribute("href", `mailto:${EMAIL}`));
+  document.querySelectorAll("[data-whatsapp]").forEach(el=>el.setAttribute("href", `https://wa.me/${WHATSAPP}`));
 })();
