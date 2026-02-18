@@ -3,38 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About – PIRAMIDA HVAC</title>
+  <title>Rreth Nesh – PIRAMIDA HVAC</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="topbar">
-    <div class="container"><div class="row">
-      <span class="pill">📞 <strong>+383 49 159 380</strong></span>
-      <span class="pill">📍 Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span>
-      <span class="pill">✉️ dionitkurti@gmail.com</span>
-    </div></div>
+    <div class="container">
+      <div class="row">
+        <span class="pill">📞 <strong data-phone-display>+383 44 635 966</strong></span>
+        <span class="pill">📍 Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span>
+        <span class="pill">✉️ <span data-email>piramida.hvac@gmail.com</span></span>
+      </div>
+    </div>
   </div>
 
   <header class="header">
-    <div class="container"><div class="row">
-      <a class="brand" href="index.html">
-        <span class="logo"><img src="assets/logo.jpg" alt="Logo"></span>
-        <span class="name"><div class="t1">PIRAMIDA HVAC</div><div class="t2">HVAC • AC • Heat Pumps</div></span>
-      </a>
+    <div class="container">
+      <div class="row">
+        <a class="brand" href="index.html">
+          <span class="logo"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo"></span>
+          <span class="name">
+            <div class="t1">PIRAMIDA HVAC</div>
+            <div class="t2">HVAC • AC • Heat Pumps</div>
+          </span>
+        </a>
 
-      <nav class="nav">
-        <a class="link" href="index.html" data-i18n="nav_home">Ballina</a>
-        <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
-        <a class="link active" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
-        <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
-        <div class="lang">
-          <button class="active" data-lang="sq" type="button">SQ</button>
-          <button data-lang="en" type="button">EN</button>
-        </div>
-        <a class="btn primary" href="tel:+38349159380" data-i18n="call_now">Thirr tani</a>
-      </nav>
-    </div></div>
+        <nav class="nav">
+          <a class="link" href="index.html" data-i18n="nav_home">Ballina</a>
+          <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
+          <a class="link active" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
+          <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
+
+          <div class="lang">
+            <button class="active" data-lang="sq" type="button">SQ</button>
+            <button data-lang="en" type="button">EN</button>
+          </div>
+
+          <a class="btn primary" data-phone-tel href="tel:+38344635966" data-i18n="call_now">Thirr tani</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -44,13 +53,20 @@
           <div class="reveal">
             <h1 data-i18n="about_h1"></h1>
             <p data-i18n="about_p"></p>
+
+            <div class="badges" style="margin-top:14px">
+              <span class="badge">🧰 Instalime profesionale</span>
+              <span class="badge">🧪 Testim para dorëzimit</span>
+              <span class="badge">💬 Komunikim i qartë</span>
+            </div>
           </div>
+
           <div class="miniCard reveal">
-            <b>Standard + Pastërti + Korrektësi</b>
-            <div>Shërbim i shpejtë, komunikim i qartë, zgjidhje efikase.</div>
+            <b>📞 <span data-phone-display>+383 44 635 966</span></b>
+            <div>✉️ <a data-email-mailto href="mailto:piramida.hvac@gmail.com"><span data-email>piramida.hvac@gmail.com</span></a></div>
             <div class="miniRow">
               <a class="btn primary" href="contact.html" data-i18n="cta_btn"></a>
-              <a class="btn ghost" href="services.html" data-i18n="nav_services"></a>
+              <a class="btn ghost" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
             </div>
           </div>
         </div>
@@ -64,10 +80,17 @@
           <div class="card reveal">
             <h3 data-i18n="about_m1t"></h3>
             <p data-i18n="about_m1p"></p>
+            <p style="margin-top:12px;color:var(--muted);line-height:1.6">
+              Ne punojmë me standard: vendosje e rregullt, vakumim, testim dhe konfigurim i saktë — që pajisja të ketë performancë dhe jetëgjatësi.
+            </p>
           </div>
+
           <div class="card reveal">
             <h3 data-i18n="about_m2t"></h3>
             <p data-i18n="about_m2p"></p>
+            <p style="margin-top:12px;color:var(--muted);line-height:1.6">
+              Qëllimi jonë është: klienti me qenë i kënaqur, me kursy energji dhe me pas komoditet 12 muaj në vit.
+            </p>
           </div>
         </div>
 
@@ -86,6 +109,29 @@
           </div>
         </div>
 
+        <div class="grid2" style="margin-top:14px">
+          <div class="card reveal">
+            <h3>Zona e shërbimit</h3>
+            <p style="color:var(--muted);line-height:1.7">
+              Fushë Kosovë, Prishtinë dhe rrethinë — na thirr dhe e konfirmojmë menjëherë lokacionin.
+            </p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+              <a class="btn primary" data-phone-tel href="tel:+38344635966">📞 Call</a>
+              <a class="btn ghost" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Çka merr klienti</h3>
+            <p style="color:var(--muted);line-height:1.7;margin:0 0 10px">
+              ✅ Instalimi i pastër & i sigurt<br>
+              ✅ Testim para dorëzimit<br>
+              ✅ Udhëzim për përdorim / kursim energjie<br>
+              ✅ Opsional: mirëmbajtje sezonale
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -98,18 +144,24 @@
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
             <a class="btn primary" href="contact.html" data-i18n="cta_btn"></a>
-            <a class="btn ghost" href="https://wa.me/38349159380" target="_blank" rel="noreferrer" data-i18n="cta_whats"></a>
+            <a class="btn ghost" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer" data-i18n="cta_whats"></a>
           </div>
         </div>
       </div>
     </section>
+
+    <a class="whatsapp" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <svg viewBox="0 0 32 32"><path d="M19.11 17.44c-.29-.15-1.7-.84-1.97-.93-.27-.1-.47-.15-.66.15-.2.29-.76.93-.93 1.12-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.31-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.6-.91-2.19-.24-.58-.49-.5-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-.02 2.44 1 1.44 2.22 2.83 3.93 3.97 1.71 1.15 3.18 1.53 4.32 1.24 1.14-.29 1.7-1.07 1.94-1.49.24-.42.24-.78.17-.85-.07-.07-.27-.15-.56-.29zM16.02 3C9.38 3 4 8.38 4 15.02c0 2.1.55 4.07 1.51 5.78L4 29l8.41-1.47c1.64.9 3.52 1.41 5.61 1.41 6.64 0 12.02-5.38 12.02-12.02C30.06 8.38 22.66 3 16.02 3zm0 22.01c-1.92 0-3.7-.56-5.2-1.53l-.37-.24-4.99.87.94-4.85-.24-.39c-1.03-1.56-1.63-3.43-1.63-5.43C4.53 9.83 9.82 4.54 16.02 4.54c6.2 0 11.49 5.29 11.49 11.49 0 6.2-5.29 8.98-11.49 8.98z"/></svg>
+    </a>
   </main>
 
   <footer class="footer">
-    <div class="container"><div class="row">
-      <small>© 2026 PIRAMIDA HVAC</small>
-      <small>dionitkurti@gmail.com • +383 49 159 380</small>
-    </div></div>
+    <div class="container">
+      <div class="row">
+        <small>© 2026 PIRAMIDA HVAC</small>
+        <small><span data-email>piramida.hvac@gmail.com</span> • <span data-phone-display>+383 44 635 966</span></small>
+      </div>
+    </div>
   </footer>
 
   <script src="app.js"></script>
