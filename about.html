@@ -2,170 +2,181 @@
 <html lang="sq">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rreth Nesh – PIRAMIDA HVAC</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rreth Nesh — PIRAMIDA HVAC</title>
+  <link rel="stylesheet" href="style.css?v=20260218" />
 </head>
-<body>
 
-<div class="topbar">
-  <div class="container">
-    <div class="row">
-      <span class="pill">📞 <strong data-phone-display>+383 44 635 966</strong></span>
-      <span class="pill">📍 <span data-address>Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span></span>
-      <span class="pill">✉️ <span data-email>piramida.hvac@gmail.com</span></span>
-    </div>
-  </div>
-</div>
+<body data-title-sq="PIRAMIDA HVAC — Rreth Nesh" data-title-en="PIRAMIDA HVAC — About">
 
-<header class="header">
-  <div class="container">
-    <div class="row">
-      <a class="brand" href="index.html">
-        <span class="logo"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo"></span>
-        <span>
-          <div class="t1">PIRAMIDA HVAC</div>
-          <div class="t2">HVAC • AC • Heat Pumps</div>
-        </span>
-      </a>
-
-      <div class="hamburger"><button type="button" data-burger aria-label="Menu">☰</button></div>
-
-      <nav class="nav" data-nav>
-        <a class="link" href="index.html" data-i18n="nav_home">Ballina</a>
-        <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
-        <a class="link active" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
-        <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
-
-        <div class="lang">
-          <button class="active" data-lang="sq" type="button">SQ</button>
-          <button data-lang="en" type="button">EN</button>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="pills">
+          <a class="pill" href="tel:+38344635966">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .3 2 .5 3.1.5.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.3 22.2 1.8 13.7 1.8 3.9 1.8 3.2 2.3 2.7 3 2.7h3.7c.7 0 1.2.5 1.2 1.2 0 1.1.2 2.1.5 3.1.1.4 0 .9-.2 1.2L6.6 10.8z" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>+383 44 635 966</span>
+          </a>
+          <a class="pill" href="mailto:piramida.hvac@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>piramida.hvac@gmail.com</span>
+          </a>
         </div>
 
-        <a class="btn primary" data-phone-tel href="tel:+38344635966" data-i18n="call_now">Thirr tani</a>
-      </nav>
+        <div class="langSwitch">
+          <button class="langBtn" data-lang="sq">SQ</button>
+          <button class="langBtn" data-lang="en">EN</button>
+        </div>
+      </div>
     </div>
   </div>
-</header>
 
-<main>
-  <section class="pageHero">
+  <!-- HEADER -->
+  <header class="header">
     <div class="container">
-      <div class="wrap">
-        <div class="reveal">
-          <h1 data-i18n="about_h1">Rreth PIRAMIDA HVAC</h1>
-          <p class="lead" data-i18n="about_p"></p>
+      <div class="row">
+        <a class="brand" href="index.html">
+          <div class="brandLogo"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo"></div>
+          <div class="brandText">
+            <b>PIRAMIDA HVAC</b>
+            <small>HVAC • AC • Heat Pumps</small>
+          </div>
+        </a>
 
-          <div class="badges" style="margin-top:12px">
-            <span class="badge">🧪 Testim para dorëzimit</span>
-            <span class="badge">🧼 Punë e pastër</span>
-            <span class="badge">💬 Komunikim i qartë</span>
+        <nav class="nav">
+          <a href="index.html" data-sq="Ballina" data-en="Home"></a>
+          <a href="services.html" data-sq="Shërbimet" data-en="Services"></a>
+          <a href="products.html" data-sq="Produktet" data-en="Products"></a>
+          <a class="active" href="about.html" data-sq="Rreth Nesh" data-en="About"></a>
+          <a href="contact.html" data-sq="Kontakt" data-en="Contact"></a>
+        </nav>
+
+        <div class="headerActions">
+          <button class="burger" data-burger aria-label="Menu"><span></span><span></span><span></span></button>
+          <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+        </div>
+      </div>
+
+      <div class="mobileNav" data-mobile>
+        <a href="index.html" data-sq="Ballina" data-en="Home"></a>
+        <a href="services.html" data-sq="Shërbimet" data-en="Services"></a>
+        <a href="products.html" data-sq="Produktet" data-en="Products"></a>
+        <a class="active" href="about.html" data-sq="Rreth Nesh" data-en="About"></a>
+        <a href="contact.html" data-sq="Kontakt" data-en="Contact"></a>
+        <div class="cta">
+          <a class="btn primary" style="width:100%" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <div class="box reveal">
+          <h1 data-sq="Rreth PIRAMIDA HVAC" data-en="About PIRAMIDA HVAC"></h1>
+          <p data-sq="Ne fokusohemi në punë të pastër, zgjidhje efikase dhe komunikim të qartë — sepse klienti e ndjen diferencën."
+             data-en="We focus on clean work, efficient solutions and clear communication — because clients feel the difference."></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="card cardGlow reveal">
+            <h3 data-sq="Misioni" data-en="Mission"></h3>
+            <p data-sq="T’i sjellim klientit komoditet gjatë gjithë vitit me instalime profesionale dhe servis të besueshëm."
+               data-en="Deliver year-round comfort through professional installations and reliable service."></p>
+            <div class="hr"></div>
+            <p class="small m0" data-sq="✓ Standard pune (vakumim + testim) për performancë"
+               data-en="✓ Work standard (vacuum + testing) for performance"></p>
+            <p class="small m0" data-sq="✓ Sugjerim i saktë i kapacitetit sipas m²"
+               data-en="✓ Accurate sizing by m²"></p>
+            <p class="small m0" data-sq="✓ Servis i shpejtë dhe mirëmbajtje sezonale"
+               data-en="✓ Fast service and seasonal maintenance"></p>
+          </div>
+
+          <div class="card cardGlow reveal">
+            <h3 data-sq="Vlerat" data-en="Values"></h3>
+            <p class="m0" data-sq="Korrektësi, pastërti, transparencë dhe fokus te kursimi."
+               data-en="Correctness, cleanliness, transparency and efficiency-first mindset."></p>
+            <div class="hr"></div>
+            <div class="grid cols2">
+              <div class="card" style="box-shadow:none; background:rgba(255,255,255,.65)">
+                <h3 class="m0" data-sq="Puna e pastër" data-en="Clean work"></h3>
+                <p class="m0 small" data-sq="Kabllot/kanalet, montim estetik." data-en="Neat cabling/ducting, aesthetic mounting."></p>
+              </div>
+              <div class="card" style="box-shadow:none; background:rgba(255,255,255,.65)">
+                <h3 class="m0" data-sq="Komunikim i qartë" data-en="Clear communication"></h3>
+                <p class="m0 small" data-sq="Pa premtime boshe — vetëm afate reale." data-en="No empty promises — only real timelines."></p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="miniCard reveal">
-          <b>📞 <span data-phone-display>+383 44 635 966</span></b>
-          <div>✉️ <a data-email-mailto href="mailto:piramida.hvac@gmail.com"><span data-email>piramida.hvac@gmail.com</span></a></div>
-          <div class="miniRow">
-            <a class="btn primary" data-phone-tel href="tel:+38344635966">Call</a>
-            <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="grid2">
-        <div class="card reveal">
-          <h3>✅ Misioni</h3>
-          <p>Me ofru shërbime HVAC profesionale me standard të lartë, çmime të drejta dhe dorëzim të pastër.</p>
-        </div>
-        <div class="card reveal">
-          <h3>✅ Vizioni</h3>
-          <p>Me qenë zgjedhja #1 për klima & pompa termike në zonë — me reputacion të fortë dhe klientë të kënaqur.</p>
-        </div>
-      </div>
-
-      <div class="grid3" style="margin-top:14px">
-        <div class="card reveal">
-          <div class="icon">🧰</div>
-          <h3>Standard pune</h3>
-          <p>Vakumim + testim para dorëzimit — që pajisja të punojë si duhet.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">⚡</div>
-          <h3>Shpejtësi</h3>
-          <p>Reagojmë shpejt dhe e mbajmë klientin të informuar deri në zgjidhje.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">💡</div>
-          <h3>Kursim energjie</h3>
-          <p>Ndihmojmë me zgjedhje të saktë sipas m² dhe izolimit për kosto më të ulët.</p>
-        </div>
-      </div>
-
-      <section class="cta" style="margin-top:18px;border-radius:22px;border:1px solid var(--border)">
-        <div class="container">
-          <div class="row reveal">
+        <div class="strip reveal">
+          <div class="inner">
             <div>
-              <h3 style="margin:0 0 6px">Partnerë / Produkte</h3>
-              <p class="lead" style="margin:0">Punojmë me produkte si Sinclair — shiko katalogun në “Shërbimet”.</p>
+              <b data-sq="Ke projekt shtëpie apo biznesi?" data-en="Home or business project?"></b><br>
+              <span data-sq="Na trego kërkesat dhe e ndërtojmë zgjidhjen optimale."
+                    data-en="Tell us what you need and we’ll build the optimal solution."></span>
             </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap">
-              <a class="btn primary" href="services.html">Shiko produktet</a>
-              <a class="btn" href="contact.html">Kontakt</a>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+              <a class="btn" href="products.html" data-sq="Shiko produktet" data-en="View products"></a>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-  </section>
-</main>
 
-<a class="whatsapp" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-  <span class="waIcon">💬</span>
-</a>
+      </div>
+    </section>
+  </main>
 
-<footer class="footer">
-  <div class="container footerGrid">
-    <div>
-      <h4 data-i18n="footer_about_title">Për ne</h4>
-      <p data-i18n="footer_about_text"></p>
-      <div class="kmini">
-        <span>❄️ AC</span><span>🔥 Heat Pumps</span><span>🧼 Service</span>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="inner">
+        <div>
+          <h4>PIRAMIDA HVAC</h4>
+          <p data-sq="Instalim, servis dhe mirëmbajtje për klima & pompa termike. Punë e pastër, korrektësi dhe zgjidhje efikase."
+             data-en="Installation, service & maintenance for AC & heat pumps. Clean work, correctness and efficient solutions."></p>
+          <div class="miniPills">
+            <span class="mini">AC</span>
+            <span class="mini" data-sq="Pompa Termike" data-en="Heat Pumps"></span>
+            <span class="mini" data-sq="Servis" data-en="Service"></span>
+          </div>
+        </div>
+        <div>
+          <h4 data-sq="Linka të shpejta" data-en="Quick links"></h4>
+          <p><a href="index.html" data-sq="Ballina" data-en="Home"></a></p>
+          <p><a href="services.html" data-sq="Shërbimet" data-en="Services"></a></p>
+          <p><a href="products.html" data-sq="Produktet" data-en="Products"></a></p>
+          <p><a href="about.html" data-sq="Rreth Nesh" data-en="About"></a></p>
+          <p><a href="contact.html" data-sq="Kontakt" data-en="Contact"></a></p>
+        </div>
+        <div>
+          <h4 data-sq="Kontakt" data-en="Contact"></h4>
+          <p><a href="tel:+38344635966">+383 44 635 966</a></p>
+          <p><a href="mailto:piramida.hvac@gmail.com">piramida.hvac@gmail.com</a></p>
+          <p><a href="https://www.google.com/maps/place/Lagjja+Eliza/@42.6453473,21.1048584,17z/data=!3m1!4b1!4m6!3m5!1s0x13549f00254c1eff:0x3bc9f4c4c2e40a45!8m2!3d42.6453473!4d21.1074333!16s%2Fg%2F11lnmsnhm9?entry=ttu"
+                target="_blank" rel="noopener"
+                data-sq="Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë"
+                data-en="Hamdi Grajqevci St., Eliza Neighborhood, Fushë Kosovë"></a></p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn primary" href="contact.html#quote" data-sq="Kërko ofertë" data-en="Get a quote"></a>
+            <a class="btn" href="https://wa.me/38344635966" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <span>© <span data-year></span> PIRAMIDA HVAC</span>
+        <span data-sq="Fushë Kosovë • Kosovë" data-en="Fushë Kosovë • Kosovo"></span>
       </div>
     </div>
+  </footer>
 
-    <div>
-      <h4 data-i18n="footer_links_title">Linka të shpejta</h4>
-      <div class="footerLinks">
-        <a href="index.html">Ballina</a>
-        <a href="services.html">Shërbimet</a>
-        <a href="about.html">Rreth Nesh</a>
-        <a href="contact.html">Kontakt</a>
-      </div>
-    </div>
-
-    <div>
-      <h4 data-i18n="footer_contact_title">Kontakt</h4>
-      <p>📞 <a data-phone-tel href="tel:+38344635966"><span data-phone-display>+383 44 635 966</span></a></p>
-      <p>✉️ <a data-email-mailto href="mailto:piramida.hvac@gmail.com"><span data-email>piramida.hvac@gmail.com</span></a></p>
-      <p>📍 <span data-address>Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span></p>
-      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn primary" href="contact.html">Kërko ofertë</a>
-        <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container footerBottom">
-    <small>© 2026 PIRAMIDA HVAC • <span data-i18n="footer_rights">Të gjitha të drejtat të rezervuara.</span></small>
-    <small><span data-email></span> • <span data-phone-display></span></small>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+  <script src="app.js?v=20260218"></script>
 </body>
 </html>
