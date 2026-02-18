@@ -3,379 +3,191 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PIRAMIDA HVAC</title>
-  <meta name="description" content="PIRAMIDA HVAC – Klima & Pompa Termike. Instalim, servis dhe mirëmbajtje." />
+  <title>PIRAMIDA HVAC – Klima & Pompa Termike</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="topbar">
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <span class="pill">📞 <strong data-phone-display>+383 44 635 966</strong></span>
+      <span class="pill">📍 <span data-address>Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span></span>
+      <span class="pill">✉️ <span data-email>piramida.hvac@gmail.com</span></span>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <a class="brand" href="index.html">
+        <span class="logo"><img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo"></span>
+        <span>
+          <div class="t1">PIRAMIDA HVAC</div>
+          <div class="t2">HVAC • AC • Heat Pumps</div>
+        </span>
+      </a>
+
+      <div class="hamburger"><button type="button" data-burger aria-label="Menu">☰</button></div>
+
+      <nav class="nav" data-nav>
+        <a class="link active" href="index.html" data-i18n="nav_home">Ballina</a>
+        <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
+        <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
+        <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
+
+        <div class="lang">
+          <button class="active" data-lang="sq" type="button">SQ</button>
+          <button data-lang="en" type="button">EN</button>
+        </div>
+
+        <a class="btn primary" data-phone-tel href="tel:+38344635966" data-i18n="call_now">Thirr tani</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
     <div class="container">
-      <div class="row">
-        <span class="pill">📞 <strong>+383 49 159 380</strong></span>
-        <span class="pill">📍 Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span>
-        <span class="pill">✉️ dionitkurti@gmail.com</span>
+      <div class="heroGrid">
+        <div class="reveal">
+          <h1 data-i18n="hero_title">Klima & Pompa Termike — instalim, servis dhe zgjidhje efikase</h1>
+          <p class="sub" data-i18n="hero_sub">Për shtëpi dhe biznese. Punë e pastër, korrektësi, dhe performancë që e ndjen çdo ditë.</p>
+
+          <div class="badges">
+            <span class="badge" data-i18n="badge_fast">⚡ Reagim i shpejtë</span>
+            <span class="badge" data-i18n="badge_clean">🧼 Punë e pastër</span>
+            <span class="badge" data-i18n="badge_eff">💡 Kursim energjie</span>
+          </div>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+            <a class="btn primary" href="contact.html" data-i18n="cta_quote">Kërko ofertë</a>
+            <a class="btn" href="services.html" data-i18n="cta_services">Shiko shërbimet</a>
+            <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat reveal">
+              <div class="num" data-count="250" data-suffix="+">0+</div>
+              <div class="label">Instalime & servisime</div>
+            </div>
+            <div class="stat reveal">
+              <div class="num" data-count="24" data-suffix="/7">0/7</div>
+              <div class="label">Kontakt & urgjenca</div>
+            </div>
+            <div class="stat reveal">
+              <div class="num" data-count="2" data-suffix="y">0y</div>
+              <div class="label">Garanci pune (ops.)</div>
+            </div>
+            <div class="stat reveal">
+              <div class="num" data-count="98" data-suffix="%">0%</div>
+              <div class="label">Kënaqësi klientësh</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel reveal">
+          <b data-i18n="panel_title">Pse na zgjedhin klientët</b>
+          <ul>
+            <li data-i18n="panel_li1">Instalim profesional (vakumim + testim)</li>
+            <li data-i18n="panel_li2">Servis & pastrim sezonal</li>
+            <li data-i18n="panel_li3">Pompa termike — dimensionim sipas m²</li>
+            <li data-i18n="panel_li4">Komunikim i qartë + ofertë e drejtë</li>
+          </ul>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn primary" data-phone-tel href="tel:+38344635966">📞 Call</a>
+            <a class="btn" href="services.html">✨ Sinclair Products</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="reveal" data-i18n="sec_services">Shërbimet kryesore</h2>
+      <p class="lead reveal" data-i18n="sec_services_lead">Zgjidhje të plota për ftohje/ngrohje — nga instalimi te mirëmbajtja.</p>
+
+      <div class="grid3">
+        <div class="card reveal">
+          <div class="icon">❄️</div>
+          <h3 data-i18n="s1t">Instalim klima</h3>
+          <p data-i18n="s1d">Montim i rregullt, vakumim, testim dhe konfigurim.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🧼</div>
+          <h3 data-i18n="s2t">Servis & pastrim</h3>
+          <p data-i18n="s2d">Diagnostikim, pastrim profesional dhe riparime.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🔥</div>
+          <h3 data-i18n="s3t">Pompa termike</h3>
+          <p data-i18n="s3d">Instalim, servis dhe optimizim për kursim energjie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="row reveal">
+        <div>
+          <h3 style="margin:0 0 6px">Gati për ofertë?</h3>
+          <p class="lead" style="margin:0">Na dërgo m² dhe lokacionin — të kthejmë përgjigje shpejt.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn primary" href="contact.html">Kërko ofertë</a>
+          <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="whatsapp" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+  <span class="waIcon">💬</span>
+</a>
+
+<footer class="footer">
+  <div class="container footerGrid">
+    <div>
+      <h4 data-i18n="footer_about_title">Për ne</h4>
+      <p data-i18n="footer_about_text">Instalim, servis dhe mirëmbajtje për klima & pompa termike. Punë e pastër, korrektësi, dhe zgjidhje efikase.</p>
+      <div class="kmini">
+        <span>❄️ AC</span><span>🔥 Heat Pumps</span><span>🧼 Service</span>
+      </div>
+    </div>
+
+    <div>
+      <h4 data-i18n="footer_links_title">Linka të shpejta</h4>
+      <div class="footerLinks">
+        <a href="index.html">Ballina</a>
+        <a href="services.html">Shërbimet</a>
+        <a href="about.html">Rreth Nesh</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 data-i18n="footer_contact_title">Kontakt</h4>
+      <p>📞 <a data-phone-tel href="tel:+38344635966"><span data-phone-display>+383 44 635 966</span></a></p>
+      <p>✉️ <a data-email-mailto href="mailto:piramida.hvac@gmail.com"><span data-email>piramida.hvac@gmail.com</span></a></p>
+      <p>📍 <span data-address>Rruga Hamdi Grajqevci, Lagjja Eliza, Fushë Kosovë</span></p>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn primary" href="contact.html">Kërko ofertë</a>
+        <a class="btn" data-whatsapp href="https://wa.me/38344635966" target="_blank" rel="noreferrer">WhatsApp</a>
       </div>
     </div>
   </div>
 
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <a class="brand" href="index.html">
-          <span class="logo">
-            <img src="assets/logo.jpg" alt="PIRAMIDA HVAC Logo">
-          </span>
-          <span class="name">
-            <div class="t1">PIRAMIDA HVAC</div>
-            <div class="t2">HVAC • AC • Heat Pumps</div>
-          </span>
-        </a>
+  <div class="container footerBottom">
+    <small>© 2026 PIRAMIDA HVAC • <span data-i18n="footer_rights">Të gjitha të drejtat të rezervuara.</span></small>
+    <small><span data-email>piramida.hvac@gmail.com</span> • <span data-phone-display>+383 44 635 966</span></small>
+  </div>
+</footer>
 
-        <nav class="nav" aria-label="Main">
-          <a class="link active" href="index.html" data-i18n="nav_home">Ballina</a>
-          <a class="link" href="services.html" data-i18n="nav_services">Shërbimet</a>
-          <a class="link" href="about.html" data-i18n="nav_about">Rreth Nesh</a>
-          <a class="link" href="contact.html" data-i18n="nav_contact">Kontakt</a>
-
-          <div class="lang" aria-label="Language">
-            <button class="active" data-lang="sq" type="button">SQ</button>
-            <button data-lang="en" type="button">EN</button>
-          </div>
-
-          <a class="btn primary" href="tel:+38349159380" data-i18n="call_now">Thirr tani</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="grid">
-
-          <div class="reveal">
-            <h1 data-i18n="hero_title">Instalim & Mirëmbajtje Klima dhe Pompa Termike</h1>
-            <p data-i18n="hero_sub">
-              Zgjidhje efikase për ngrohje dhe ftohje — për shtëpi dhe biznese. Punë e pastër, korrektësi dhe shërbim i shpejtë.
-            </p>
-
-            <div class="badges">
-              <span class="badge" data-i18n="badge_fast">⚡ Reagim i shpejtë</span>
-              <span class="badge" data-i18n="badge_clean">🧼 Punë e pastër</span>
-              <span class="badge" data-i18n="badge_eff">💡 Efikasitet energjie</span>
-            </div>
-
-            <div class="actions">
-              <a class="btn primary" href="contact.html" data-i18n="cta_quote">Kërko ofertë</a>
-              <a class="btn ghost" href="services.html" data-i18n="cta_services">Shiko shërbimet</a>
-            </div>
-
-            <div class="stats reveal">
-              <div class="stat">
-                <div class="n" data-count="120" data-suffix="+">0+</div>
-                <div class="t" data-i18n="stat1t">Instalime & servisime</div>
-              </div>
-              <div class="stat">
-                <div class="n">24/7</div>
-                <div class="t" data-i18n="stat2t">Kontakt & urgjenca</div>
-              </div>
-              <div class="stat">
-                <div class="n">2y</div>
-                <div class="t" data-i18n="stat3t">Garanci pune (ops.)</div>
-              </div>
-              <div class="stat">
-                <div class="n">5★</div>
-                <div class="t" data-i18n="stat4t">Kënaqësi klientësh</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel reveal">
-            <h3 data-i18n="panel_title">Shërbim i shpejtë & i sigurt</h3>
-            <ul>
-              <li data-i18n="panel_li1">Instalim profesional i klimave</li>
-              <li data-i18n="panel_li2">Servis, pastrim dhe mirëmbajtje sezonale</li>
-              <li data-i18n="panel_li3">Pompa termike — instalim & servis</li>
-              <li data-i18n="panel_li4">Konsulencë dhe ofertim sipas m²</li>
-            </ul>
-
-            <div class="row">
-              <a class="btn primary" href="tel:+38349159380">📞 +383 49 159 380</a>
-              <a class="btn ghost" href="mailto:dionitkurti@gmail.com">✉️ Email</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section">
-      <div class="container">
-        <div class="reveal">
-          <h2 data-i18n="sec_services">Shërbimet kryesore</h2>
-          <p class="lead" data-i18n="sec_services_lead"></p>
-        </div>
-
-        <div class="grid3">
-          <div class="card reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2v20M4 6l16 12M20 6L4 18"/>
-              </svg>
-            </div>
-            <h3 data-i18n="s1t"></h3>
-            <p data-i18n="s1d"></p>
-          </div>
-
-          <div class="card reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s7-4 7-11c0-4-2-6-4-8 0 3-2 4-3 6-1-2-1-4-1-6C8 5 5 8 5 13c0 5 3 9 7 9z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="s2t"></h3>
-            <p data-i18n="s2d"></p>
-          </div>
-
-          <div class="card reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-                <path d="M12 10c-6-6 6-10 6-2M14 12c8 0 6 10-2 6M12 14c0 8-10 6-6-2M10 12c-8 0-6-10 2-6"/>
-              </svg>
-            </div>
-            <h3 data-i18n="s3t"></h3>
-            <p data-i18n="s3d"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section">
-      <div class="container">
-        <div class="reveal">
-          <h2 data-i18n="sec_gallery">Punë e pastër, rezultat i sigurt</h2>
-          <p class="lead" data-i18n="sec_gallery_lead"></p>
-        </div>
-
-        <div class="gallery">
-          <div class="gItem reveal">
-            <div class="gImg"></div>
-            <div class="gBody">
-              <b data-i18n="g1t"></b>
-              <span data-i18n="g1d"></span>
-            </div>
-          </div>
-
-          <div class="gItem reveal">
-            <div class="gImg"></div>
-            <div class="gBody">
-              <b data-i18n="g2t"></b>
-              <span data-i18n="g2d"></span>
-            </div>
-          </div>
-
-          <div class="gItem reveal">
-            <div class="gImg"></div>
-            <div class="gBody">
-              <b data-i18n="g3t"></b>
-              <span data-i18n="g3d"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY -->
-    <section class="section">
-      <div class="container">
-        <div class="reveal">
-          <h2 data-i18n="sec_why"></h2>
-          <p class="lead" data-i18n="sec_why_lead"></p>
-        </div>
-
-        <div class="grid3">
-          <div class="card reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 1v22M6 6h12M6 18h12"/>
-              </svg>
-            </div>
-            <h3 data-i18n="w1t"></h3>
-            <p data-i18n="w1d"></p>
-          </div>
-
-          <div class="card reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 12l6 6L20 6"/>
-              </svg>
-            </div>
-            <h3 data-i18n="w2t"></h3>
-            <p data-i18n="w2d"></p>
-          </div>
-
-          <div class="card reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="w3t"></h3>
-            <p data-i18n="w3d"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section">
-      <div class="container">
-        <div class="reveal">
-          <h2 data-i18n="sec_process"></h2>
-          <p class="lead" data-i18n="sec_process_lead"></p>
-        </div>
-
-        <div class="grid2">
-          <div class="card reveal step">
-            <div class="num">1</div>
-            <div>
-              <h4 data-i18n="p1t"></h4>
-              <p data-i18n="p1d"></p>
-            </div>
-          </div>
-
-          <div class="card reveal step">
-            <div class="num">2</div>
-            <div>
-              <h4 data-i18n="p2t"></h4>
-              <p data-i18n="p2d"></p>
-            </div>
-          </div>
-
-          <div class="card reveal step">
-            <div class="num">3</div>
-            <div>
-              <h4 data-i18n="p3t"></h4>
-              <p data-i18n="p3d"></p>
-            </div>
-          </div>
-
-          <div class="card reveal step">
-            <div class="num">4</div>
-            <div>
-              <h4 data-i18n="p4t"></h4>
-              <p data-i18n="p4d"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section">
-      <div class="container">
-        <div class="reveal">
-          <h2 data-i18n="sec_test"></h2>
-          <p class="lead" data-i18n="sec_test_lead"></p>
-        </div>
-
-        <div class="slider reveal">
-          <p class="quote" id="quote"></p>
-          <div class="author">
-            <span id="author"></span>
-            <span class="dots">
-              <span class="dot on"></span><span class="dot"></span><span class="dot"></span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ + QUICK CONTACT -->
-    <section class="section">
-      <div class="container">
-        <div class="reveal">
-          <h2 data-i18n="sec_faq"></h2>
-          <p class="lead"> </p>
-        </div>
-
-        <div class="grid2">
-          <div class="faq reveal">
-            <button type="button">
-              <span data-i18n="faq1q"></span>
-              <span class="chev">▾</span>
-            </button>
-            <div class="a" data-i18n="faq1a"></div>
-          </div>
-
-          <div class="faq reveal">
-            <button type="button">
-              <span data-i18n="faq2q"></span>
-              <span class="chev">▾</span>
-            </button>
-            <div class="a" data-i18n="faq2a"></div>
-          </div>
-
-          <div class="faq reveal">
-            <button type="button">
-              <span data-i18n="faq3q"></span>
-              <span class="chev">▾</span>
-            </button>
-            <div class="a" data-i18n="faq3a"></div>
-          </div>
-
-          <div class="card reveal">
-            <h3 data-i18n="cta_title"></h3>
-            <p class="lead" data-i18n="cta_text"></p>
-            <div style="display:flex;gap:10px;flex-wrap:wrap">
-              <a class="btn primary" href="contact.html" data-i18n="cta_btn"></a>
-              <a class="btn ghost" href="https://wa.me/38349159380" target="_blank" rel="noreferrer" data-i18n="cta_whats"></a>
-              <a class="btn ghost" href="tel:+38349159380">Call</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA STRIP -->
-    <section class="cta">
-      <div class="container">
-        <div class="row reveal">
-          <div>
-            <h3 style="margin:0 0 6px" data-i18n="cta_title"></h3>
-            <p data-i18n="cta_text"></p>
-          </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" href="contact.html" data-i18n="cta_btn"></a>
-            <a class="btn ghost" href="https://wa.me/38349159380" target="_blank" rel="noreferrer" data-i18n="cta_whats"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WhatsApp floating -->
-    <a class="whatsapp" href="https://wa.me/38349159380" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-      <svg viewBox="0 0 32 32">
-        <path d="M19.11 17.44c-.29-.15-1.7-.84-1.97-.93-.27-.1-.47-.15-.66.15-.2.29-.76.93-.93 1.12-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.31-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.6-.91-2.19-.24-.58-.49-.5-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-.02 2.44 1 1.44 2.22 2.83 3.93 3.97 1.71 1.15 3.18 1.53 4.32 1.24 1.14-.29 1.7-1.07 1.94-1.49.24-.42.24-.78.17-.85-.07-.07-.27-.15-.56-.29zM16.02 3C9.38 3 4 8.38 4 15.02c0 2.1.55 4.07 1.51 5.78L4 29l8.41-1.47c1.64.9 3.52 1.41 5.61 1.41 6.64 0 12.02-5.38 12.02-12.02C30.06 8.38 22.66 3 16.02 3zm0 22.01c-1.92 0-3.7-.56-5.2-1.53l-.37-.24-4.99.87.94-4.85-.24-.39c-1.03-1.56-1.63-3.43-1.63-5.43C4.53 9.83 9.82 4.54 16.02 4.54c6.2 0 11.49 5.29 11.49 11.49 0 6.2-5.29 8.98-11.49 8.98z"/>
-      </svg>
-    </a>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <small>© 2026 PIRAMIDA HVAC</small>
-        <small>dionitkurti@gmail.com • +383 49 159 380</small>
-      </div>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
